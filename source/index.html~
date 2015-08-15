@@ -1,0 +1,894 @@
+---
+layout: default
+---
+<style type="text/css">
+
+li
+{
+    list-style-type: none;
+}
+
+ul.tasks li
+{
+    list-style-type: square;
+    font-size: 1em;
+}
+
+ol li
+{
+   
+}
+
+
+ol time {
+     float: left;
+     height: 2em;
+     vertical-align: middle;
+     min-width: 110px; 
+     margin-right: 1em;
+     
+}
+
+ol section.item {
+    size: 100%;
+    margin-left: 110px;
+    margin-right: 50px;
+    border-left: 5px;
+    border-color: #292929;
+    border-style: solid;
+    background-color: #ECECEC;
+    border-radius: 0px 10px 10px 0px;
+}
+
+ol section.item h1 {
+     font-size: 0.9em;
+     margin: 0;
+}
+
+ol section.item h2 {
+     font-size: 0.8em;
+     margin: 0;
+}
+
+ol section.ac-container h3 {
+     font-size: 0.7em;
+}
+
+ol section.ac-container p {
+    font-size: 0.8em;
+}
+
+
+
+ol nav {
+    float: right;
+    margin-right: 50px;
+}
+
+.skills li
+{
+    width: 50%;
+    float: left;
+    padding: 0px 0;
+}
+
+.tags {
+    margin-left: 125px;
+}
+
+.tags a, .tags2 a {
+	background: #c5c5c5;
+	color: #fff;
+	text-decoration: none;
+	margin: 0 0 5px 8px;
+	padding: 2px 10px 1px;
+	position: relative;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+	white-space: nowrap;
+	line-height: 21px;
+	font-size: 0.7em;
+}
+
+nav label {
+	background: #787878;
+	color: #fff;
+	text-decoration: none;
+	margin: 0 0 5px 0px;
+	padding: 2px 5px 1px;
+	position: relative;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+	white-space: nowrap;
+	font-size: 0.7em;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+nav label:hover{
+    background: #CCCCCC;
+}
+
+.ac-container input{
+    display: none;
+}
+.ac-container article{
+    margin-top: 0.5em;
+    background: rgba(255, 255, 255, 0.5);
+    overflow: hidden;
+    height: 0px;
+    
+    width: 100%;
+    z-index: 10;
+    transition:
+        height 0.3s ease-in-out,
+        box-shadow 0.6s linear;
+}
+.ac-container input:checked ~ article{
+    transition:
+        height 0.5s ease-in-out,
+        box-shadow 0.1s linear;
+}
+.ac-container article p{
+    text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+}
+.ac-container input:checked ~ article.ac-small{
+
+    height: 4em;   
+}
+.ac-container input:checked ~ article.ac-politechnika-lc{
+    height: 11.3em;  
+}
+
+.ac-container input:checked ~ article.ac-pfe{
+    height: 17.5em;   
+}
+
+.ac-container input:checked ~ article.ac-parallelism{
+    height: 16em;  
+}
+
+.ac-container input:checked ~ article.ac-stage{
+    height: 15em;  
+}
+
+.ac-container input:checked ~ article.ac-prjp1{
+    height: 11em;  
+}
+
+.ac-container input:checked ~ article.ac-prj1{
+    height: 17.8em;  
+}
+
+.ac-container input:checked ~ article.ac-prj2{
+    height: 6em;  
+}
+
+.ac-container input:checked ~ article.ac-moreprj{
+    height: auto;  
+}
+
+.info {
+    font-size: 0.8em;
+    float: left;
+    vertical-align: middle;
+    margin: 0em 1em;
+    min-height: 6em;
+    background: url(images/9.png) no-repeat;
+    padding-left: 6em;
+}
+
+.cours {
+    font-size: 0.8em;
+    float: left;
+    vertical-align: middle;
+    margin: 0em 1em;
+    min-height: 6em;
+    height:auto;
+    background: url(images/14.png) no-repeat;
+    padding-left: 6em;
+}
+
+.jobs {
+    font-size: 0.8em;
+    float: left;
+    vertical-align: middle;
+    margin: 0em 1em;
+    min-height: 6em;
+    height:auto;
+    background: url(images/4.png) no-repeat;
+    padding-left: 6em;
+}
+
+.doc {
+    
+    float: left;
+    vertical-align: middle;
+    margin: 0em 1em;
+    min-height: 6em;
+    background: url(images/15.png) no-repeat;
+    padding-left: 6em;
+    margin-top: 1em;
+}
+
+.doc ul {
+    width: 80%;
+}
+
+.doc li
+{
+    width: 45%;
+    float: left;
+    padding-top: 0px 0;
+    padding-left: 25px;
+    font-size: 0.7em;
+}
+
+.ac-container article div {
+}
+
+article div a {
+    font-weight: bold;
+}
+
+.doc li.github {
+    background: url(images/github.png) no-repeat;
+    background-size: 20px 23px;
+}
+
+.doc li.pdf {
+    background: url(images/pdf.png) no-repeat;
+    background-size: 20px 23px;
+}
+
+.doc li.web {
+    background: url(images/web.png) no-repeat;
+    background-size: 20px 23px;
+}
+
+</style> 
+
+
+<div class="blog-index">
+  
+</div>
+
+{% if site.blog_index_asides.size %}
+<aside class="sidebar">
+    {% include_array blog_index_asides %}
+  {% else %}
+    {% include_array default_asides %}
+</aside>
+{% endif %}
+
+
+
+
+
+
+    
+
+
+
+<div>
+<h2>Formation académique</h2>
+<ol>
+    <li>
+        <time>2013 - 2014</time>
+        <nav>
+            <label for="ac-1">Détails</label>
+            <label for="ac-2">Cours</label>
+        </nav>
+        <section class="item">
+            <h1>École Polytechnique de Cracovie, Pologne</h1>
+            <h2>Département de Mathématiques, Physique et Informatique.</h2>
+        </section>
+        <section class="ac-container">
+            <div>
+                <input id="ac-1" name="accordion-1" type="checkbox" />
+                <article class="ac-small">
+                    <div class="info">Année d'échange en Pologne, au niveau Master 2, axée sur les thématiques du calcul haute performance, de l'intelligence artificielle et du calcul parallèle avec des ouvertures à la cryptographie.</div>
+                </article>
+            </div>
+            <div>
+                <input id="ac-2" name="accordion-1" type="checkbox"/>
+                <article class="ac-politechnika-lc">
+                    <div class="cours">
+                        <ol class="tasks">
+                            <li>Semestre 1 :
+                                <ul class="skills tasks">
+                                <li>Cryptography</li>
+                                <li>Elements of Artificial Intelligence</li>
+                                <li>Probabilities and Statistics</li>
+                                <li>Parallel And Distributed Programming</li>
+                                <li>Polish Courses (at Jagellonian University)</li>
+                                <li>Projet de fin d'étude</li>
+                                </ul>
+                            </li>
+                            <li>Semestre 2 :
+                                <ul class="skills tasks">
+                                <li>High Performance Computing</li>
+                                <li>Neural Network</li>
+                                <li>Polish Courses (at Jagellonian University)</li>
+                                <li>Projet de fin d'étude</li>
+                                </ul>
+                            </li>
+                       </ol>
+                   </div>
+                </article>
+            </div>
+            </section>
+    </li>
+    <li>
+        <time>2009 - 2014</time>
+        <nav>
+            <label for="ac-3">Détails</label>
+            <label for="ac-4">Cours</label>
+        </nav>
+        <section class="item">
+            <h1><abbr title="Institut National des Sciences Appliquées">INSA</abbr> de Rouen</h1>
+            <h2>Département <a href="http://lmi.insa-rouen.fr/specialite-genie-mathematique.html" title="Page web du département GM au sein du LMI">Génie Mathématique</a>.</h2>
+        </section>
+        <section class="ac-container">
+            <div>
+                <input id="ac-3" name="accordion-1" type="checkbox" />
+                <article class="ac-small">
+                    <div class="info">Diplôme d'ingénieur mention Génie Mathématique. Formation orientée vers la modélisation scientifique, la productique, la prévision, planification et l'informatique au sens large. Top 5 sur environ 50.</div>
+                </article>
+            </div>
+            <div>
+                <input id="ac-4" name="accordion-1" type="checkbox"/>
+                <article class="ac-insa-lc">
+                    
+                </article>
+            </div>
+            </section>
+    </li>
+    <li>
+        <time>2006 - 2009</time>
+        <section class="item">
+        <h1>Lycée Voltaire, Orléans</h1>
+        <h2>Baccalauréat Scientifique, spécialité Mathématiques, mention Bien</h2>
+        </section>
+    </li>
+</ol>
+
+<h2>Publications</h2>
+<ol>
+    <li>
+        <time>En cours</time>
+        <section class="item">
+            <h1>Online Parameters Tuning Using DAE-YAHSHP On MultiZeno Benchmarks</h1>
+            <h2>A. Quemy and M. Schoenauer</h2>
+        </section>
+    </li>
+</ol>
+
+<h2>Expérience professionnelle</h2>
+<ol>
+    <li>
+        <time>
+            Nov. 2013<br>
+            6 mois
+        </time> 
+        <nav>
+            <label for="ac-5">Détails</label>
+        </nav>
+        <section class="item">
+            <h1>Inria Saclay, équipe <abbr title="Thématique Apprentissage et Optimisation">TAO<abbr></h1>
+            <h2>Projet de Fin d'Études (réalisé à distance).</h2>  
+        </section>
+        <span class="tags"><a>Optimisation multi-objectifs</a><a>Planification</a><a>Optimisation d'algorithme</a><a>Génie logiciel</a><a>C++</a></span>
+        <section class="ac-container">
+            <div>
+                <input id="ac-5" name="accordion-1" type="checkbox" />
+                <article class="ac-pfe">
+                    <div class="info">
+                        Titre : « Introduction de modalités adaptatives dans le logiciel de planification évolutionnaire (mono- ou multi-objectif) "Divide-and-Evolve" (DAE) »<br />
+                        Supervisé par M. Schoenauer (Inria) et C. Goût (INSA)
+                    </div>
+                    <div class="jobs">
+                        Travail réalisé :
+                        <ul class="tasks">
+                            <li>Résolution exacte du problème de planification temporelle <a href="https://descarwin.lri.fr/tiki-index.php?page=Multi-Zeno" title="MultiZenoTravel Problem">MultiZeno</a> (<abbr title="International Planning Competition">IPC</abbr> series).</li>
+                            <li>Développement du ZenoSolver, solveur C++11 pour les instances MultiZenoTravel.</li>
+                            <li>Conception et validation expérimentale de stratégies d'optimisation online de paramètres.</li>
+                            <li>Ingénierie logicielle sur le projet <a href="https://descarwin.lri.fr/tiki-index.php" title="ANR Descarwin">Descarwin (ANR-09-COSI-002)</a>.</li>
+                        </ul>
+                        
+                    </div>
+                    <div class="doc">
+                        <ul>
+                            <li class="pdf"><a href="doc/pfe_rapport.pdf" title="Rapport de Projet de Fin d'Étude">Rapport du projet.</a></li>
+                            <li class="github"><a href="https://github.com/aquemy/ZenoSolver" title="ZenoSolver sur GitHub">ZenoSolver sur GitHub</a></li>
+                            <li class="pdf"><a href="doc/pfe_soutenance.pdf" title="Présentation de Projet de Fin d'Étude">Présentation de soutenance</a></li>
+                            <li class="github"><a href="https://github.com/aquemy/dae" title="ZenoSolver sur GitHub">Descarwin sur GitHub</a></li>
+                       </ul>
+                   </div>
+                </article>
+            </div>
+        </section>
+    </li>
+    
+    <li>
+        <time>
+            Sep. 2012</br>
+            6 mois 
+        </time>
+        <nav>
+            <label for="ac-6">Détails</label>
+        </nav>
+        <section class="item">
+            <h1>INSA Rouen en partenariat avec Inria Lille-Nord Europe, équipe <abbr title="Discrete multi-objective Optimization for Large scale Problems with Hybrid dIstributed techNiques">DOLPHIN</abbr></h1>
+            <h2>Projet semestriel en remplacement d'un projet académique.</h2>
+        </section>
+        <span class="tags"><a>Calcul Parallèle</a><a>Métaheuristiques</a><a>Optimisation Approchée</a><a>Génie logiciel</a><a>C++</a></span>
+        <section class="ac-container">
+            <div>
+                <input id="ac-6" name="accordion-1" type="checkbox" />
+                <article class="ac-parallelism">
+                    <div class="info">
+                        Titre : « Modèle de parallélisme en îles pour des méta-heuristiques.»<br/>
+                        Supervisé par C. Canape (Inria) et J-P. Kotowicz (INSA)
+                    </div>
+                    <div class="jobs">
+                        Thèmes abordés et compétences acquises :
+                        <ul class="tasks">
+                            <li>Algorithmes génétiques, optimisation approchée, statistiques,…</li>
+                            <li>Développement en C++11, parser JSON, modélisation UML, calcul parallèle et HPC,… </li>
+                            <li>Génie logiciel, gestion de projet,…</li>
+                        </ul>
+                    </div>
+                    <div class="doc">
+                        <ul>
+                            <li class="pdf"><a href="doc/ile_rapport.pdf" title="Rapport">Rapport du projet.</a></li>
+                            <li class="web"><a href="http://raweb.inria.fr/rapportsactivite/RA2013/dolphin/uid58.html" title="Rapport d'activité 2013 de l'équipe DOLPHIN">Rapport d'activité.</a></li>
+                            <li class="pdf"><a href="doc/ile_soutenance.pdf" title="Présentation">Présentation de soutenance</a></li>
+                            <li class="github"><a href="https://github.com/aquemy/paradiseo" title="ParadisEO sur GitHub">ParadisEO sur GitHub</a></li>
+                        </ul>
+                   </div>
+                </article>
+            </div>
+        </section>
+    </li>
+    <li>
+        <time>
+            Jui. 2012</br>
+            3 mois 
+        </time>
+        <nav>
+            <label for="ac-7">Détails</label>
+        </nav>
+        <section class="item">
+            <h1>Inria Lille-Nord Europe, équipe <abbr title="Discrete multi-objective Optimization for Large scale Problems with Hybrid dIstributed techNiques">DOLPHIN</abbr></h1>
+            <h2>Stage en ingénierie logicielle</h2>
+        </section>
+        <span class="tags"><a>Calcul Parallèle</a><a>Métaheuristiques</a><a>Génie logiciel</a><a>C++</a></span>
+        <section class="ac-container">
+            <div>
+                <input id="ac-7" name="accordion-1" type="checkbox" />
+                <article class="ac-stage">
+                    <div class="info">
+                        Titre : « Génie logiciel sur un framework de méta-heuristiques »<br />
+                        Supervisé par C. Canape.
+                    </div>
+                    <div class="jobs">Travail réalisé :
+                        <ul class="tasks">
+                            <li>Développement d'un module de parallélisme à mémoire partagée en C++11 : <a href="http://paradiseo.gforge.inria.fr/index.php?n=Main.SMP" title="SMP">SMP</a>.</li>
+                            <li>Stabilisation d'une nouvelle version du framework de métaheuristiques <a href="http://paradiseo.gforge.inria.fr" title="ParadisEO">ParadisEO</a>.</li>
+                            <li>Mise en place d'outils d'ingénierie : bug tracking, profiling, builds, intégration continue,…</li>
+                        </ul>
+                    </div>
+                    <div class="doc">
+                        <ul>
+                            <li class="pdf"><a href="doc/stage_rapport.pdf" title="Rapport">Rapport de stage.</a></li>
+                            <li class="web"><a href="http://raweb.inria.fr/rapportsactivite/RA2013/dolphin/uid58.html" title="Rapport d'activité 2013 de l'équipe DOLPHIN">Rapport d'activité.</a></li>
+                            <li class="pdf"><a href="doc/stage_soutenance.pdf" title="Présentation">Présentation de soutenance</a></li>
+                            <li class="github"><a href="https://github.com/aquemy/paradiseo" title="ParadisEO sur GitHub">ParadisEO sur GitHub</a></li>
+                        </ul>
+                   </div>
+                </article>
+            </div>
+        </section>
+    </li>
+</ol>
+
+<h2>Formation complémentaire</h2>
+<ol>
+    <li>
+        <time>
+            Sep. 2013</br>
+            1 mois 
+        </time>
+        <section class="item">
+            <h1>Université Jagellonne, Cracovie, Pologne</h1>
+            <h2>Centre de langue et culture polonaise, cours intensifs de polonais</h2>
+        </section>
+    </li>
+</ol>
+
+<h2>Compétences</h2>
+
+<h3>Mathématiques</h3>
+<div style="height:auto; margin-bottom: 7.5em;">
+<ul class="skills">
+    <li>Modélisation & Simulation</li>
+    <li><abbr title="Équation Différentielle Ordinaire">EDO</abbr>, <abbr title="Équation aux Dérivées Partielles">EDP</abbr>, Élements finis</li>
+    <li>Optimisation</li>
+    <li>Intelligence artificielle</li>
+    <li>Analyse et calcul numérique</li>
+    <li>Statistiques & Probabilités</li>
+</ul>
+</div>
+
+<h3>Génie logiciel & Informatique</h3>
+<ul>
+    <li><strong>Conception</strong> : UML & Design Pattern, Méthodes agiles, Algorithmique
+    <li><strong>BDD</strong> : SQL, Modèle relationnel</li>
+    <li><strong>Langages</strong> : C++, C, Fortran, Java, bash</li>
+    <li><strong>Web</strong> : HTML5, CSS3, PHP5</li>
+    <li><strong>Outils</strong> : CMake, Valgrind, Gnutools, Git,…
+    <li><strong>Divers</strong> : Maîtrise d'UNIX & Windows, notions de réseau, LaTeX</li>
+</ul>
+
+<h3>Langues</h3>
+<ul>
+    <li><strong>Français</strong> : langue maternelle</li>
+    <li><strong>Anglais</strong> : courant, TOEIC 880/990, Année à l'étranger</li>
+    <li><strong>Espagnol</strong> : intermédiaire</li>
+    <li><strong>Polonais</strong> : débutant / Certification A1.2</li>
+</ul>
+
+<h2>Quelques projets personnels</h2>
+<ol>
+    <li>
+        <time>
+            Depuis<br /> 
+            Mar. 2013 
+        </time>
+        <nav>
+            <label for="ac-8">Détails</label>
+        </nav>
+        <section class="item">
+            <a href="http://endomorphis.me" title="Endomorphis.me"><h1>Endormorphis.me</h1></a>
+            <span class="tags2"><a>Web</a><a>Mathématiques</a><a>Réflexions</a></span>
+        </section>
+        <section class="ac-container">
+            <div>
+                <input id="ac-8" name="accordion-1" type="checkbox" />
+                <article class="ac-prjp1">
+                    <div class="info">Plateforme de partage de quelques réflexions, articles et recherches sur mon temps libre, sur les thématiques des mathématiques, de l'informatique et de l'intelligence artificielle.</div>
+                    <div class="doc">
+                        <ul style="width:100%;">
+                            <li class="web" style="width:100%;"><a href="http://endomorphis.me" title="Endomorphis.me">Accéder à Endormorphis.me</a></li>
+                        </ul>
+                   </div>
+                </article>
+            </div>
+        </section>
+    </li>
+    <li>
+        <time>
+            Depuis<br /> 
+            Jui. 2012 
+        </time>
+        <nav>
+            <label for="ac-9">Détails</label>
+        </nav>
+        <section class="item">
+            <h1>ParadisEO</h1>
+            <span class="tags2"><a>Optimisation</a><a>Génie logiciel</a><a>C++11</a></span>
+        </section>
+        <section class="ac-container">
+            <div>
+                <input id="ac-9" name="accordion-1" type="checkbox" />
+                <article class="ac-prjp1">
+                    <div class="info">Refactorisation, support et développement de la plateforme de métaheuristiques ParadisEO.</div>
+                    <div class="doc">
+                        <ul style="width:100%;">
+                            <li class="web" style="width:100%;"><a href="http://paradiseo.gforge.inria.fr" title="ParadisEO">Site officiel de ParadisEO</a></li>
+                            <li class="github" style="width:100%;"><a href="https://github.com/aquemy/paradiseo" title="ParadisEO sur GitHub">ParadisEO sur GitHub</a></li>
+                        </ul>
+                   </div>
+                </article>
+            </div>
+        </section>
+    </li>
+    <li>
+        <time>
+            Depuis<br /> 
+            Août. 2012  
+        </time>
+        <nav>
+            <label for="ac-10">Détails</label>
+        </nav>
+        <section class="item">
+            <h1>TMX Library</h1>
+            <span class="tags2"><a>Génie logiciel</a><a>C++11</a></span>
+        </section>
+        <section class="ac-container">
+            <div>
+                <input id="ac-10" name="accordion-1" type="checkbox" />
+                <article class="ac-prjp1">
+                    <div class="info">Bibliothèque pour parser et manipuler des fichiers au format TMX utilisé par le logiciel Tiled Map Editor.</div>
+                    <div class="doc">
+                        <ul style="width:100%;">
+                            <li class="github" style="width:100%;"><a href="https://github.com/aquemy/tmxlib" title="TMXLib sur GitHub">TMXLib sur GitHub</a></li>
+                        </ul>
+                   </div>
+                </article>
+            </div>
+        </section>
+    </li>
+</ol>
+
+<h2>Quelques projets académiques</h2>
+<ol>
+    <li>
+        <time>
+            Jan. 2013</br>
+            6 mois 
+        </time>
+        <nav>
+            <label for="ac-11">Détails</label>
+        </nav>
+        <section class="item">
+            <h1>Intelligence artificielle, Spatial Intelligence Framework (SIF)</h1>
+            <span class="tags2"><a>A.I.</a><a>Affectation</a><a>Planification</a><a>Simulation</a><a>Algorithmique</a><a>C++11</a><a>Génie Logiciel</a></span>
+        </section>
+        <section class="ac-container">
+            <div>
+                <input id="ac-11" name="accordion-1" type="checkbox" />
+                <article class="ac-prj1">
+                    <div class="info">
+                        Conception d'un framework de simulation pour la résolution de problèmes spatiaux d'I.A.<br />
+                        Supervisé par J-P. Kotowicz
+                    </div>
+                    <div class="jobs">
+                        Thèmes abordés et compétences acquises :
+                        <ul class="tasks">
+                            <li>Génie logiciel : analyse fonctionnelle, intégration continue, modélisation UML, TDD,…
+                            <li>Algorithmiques : simulation, partitionnement, plus-court-chemin, affectation, modèle de Markov caché…</li>
+                            <li>Outils : C++, CMake, CTest, Git, Valgrind, Doxygen,…</li>
+
+                        </ul>
+                        Livrable : implémentation partielle et démonstrateur graphique utilisant la SFML.
+                    </div> 
+                    <div class="doc">
+                        <ul style="width:100%;">
+                            <li class="pdf"><a href="doc/taskassignment_rapport.pdf" title="Rapport">Rapport du projet.</a></li>
+                            <li class="github" style="width:100%;"><a href="https://github.com/aquemy/TaskAssignment" title="TaskAssignment">Implémentation partielle livrée.</a></li>
+                        </ul>
+                   </div>           
+                </article>
+            </div>
+        </section>
+    </li>
+    <li>
+        <time>
+            Jan. 2013</br>
+            6 mois 
+        </time>
+        <nav>
+            <label for="ac-12">Détails</label>
+        </nav>
+        <section class="item">
+            <h1>Programmation linéaire, Méthode du Simplexe</h1>
+            <span class="tags2"><a>Java</a><a>Maven</a><a>Optimisation linéaire</a></span>
+        </section>
+        <section class="ac-container">
+            <div>
+                <input id="ac-12" name="accordion-1" type="checkbox" />
+                <article class="ac-prj2">
+                    <div class="info">Développement d'un outil pédagogique de visualisation de la résolution d'un problème d'optimisation linéaire par la méthode du simplexe.<br />
+                    Supervisé par V. Salnikov
+                    </div>
+                </article>
+            </div>
+        </section>
+    </li>
+    <section class="ac-container">
+    <div>
+        <input id="ac-100" name="accordion-1" type="checkbox" />
+        <article class="ac-moreprj">
+    <li>
+        <time>
+            Jan. 2013</br>
+            6 mois 
+        </time>
+        <nav>
+            <label for="ac-13">Détails</label>
+        </nav>
+        <section class="item">
+            <h1>Base de Données, Serveur Multimédia</h1>
+            <span class="tags2"><a>Base de Données</a><a>SQL</a><a>Modèle relationnel</a></span>
+        </section>
+        <section class="ac-container">
+            <div>
+                <input id="ac-13" name="accordion-1" type="checkbox" />
+                <article class="ac-prj1">
+                    <div class="info">Modélisation, conception et tests d'une base de données relationnelle à destination d'un logiciel de gestion de contenu multimédia.</div>
+                </article>
+            </div>
+        </section>
+    </li>
+    <li>
+        <time>
+            Jan. 2013</br>
+            6 mois 
+        </time>
+        <nav>
+            <label for="ac-14">Détails</label>
+        </nav>
+        <section class="item">
+            <h1>Analyse numérique, Méthodes d'Adams-Moulton, de Nyström, de Runge-Kutta</h1>
+            <span class="tags2"><a>Calcul numérique</a><a>C++</a></span>
+        </section>
+        <section class="ac-container">
+            <div>
+                <input id="ac-14" name="accordion-1" type="checkbox" />
+                <article class="ac-prj4">
+                    <div class="info">Étude et implémentation de quelques méthodes d'intégration numérique à l'aide du C++, de CMake et Gnuplot pour la visualisation.</div>
+                </article>
+            </div>
+        </section>
+    </li>
+    <li>
+        <time>
+            Jan. 2013</br>
+            6 mois 
+        </time>
+        <nav>
+            <label for="ac-15">Détails</label>
+        </nav>
+        <section class="item">
+            <h1>Développement logiciel, Simulation d'un magasin</h1>
+            <span class="tags2"><a>Simulation</a><a>Génie Logiciel</a><a>Java</a><a>Maven</a></span>
+        </section>
+        <section class="ac-container">
+            <div>
+                <input id="ac-15" name="accordion-1" type="checkbox" />
+                <article class="ac-prj5">
+                    <div class="info">Modélisation UML et implémentation Java partielle d'une simulation de magasin d'usine à l'aide de méthodes classiques de simulation.</div>
+                </article>
+            </div>
+        </section>
+    </li>
+    <li>
+        <time>
+            Jan. 2013</br>
+            6 mois 
+        </time>
+        <nav>
+            <label for="ac-16">Détails</label>
+        </nav>
+        <section class="item">
+            <h1>Analyse des données, Étude du canidé de Jussac</h1>
+            <span class="tags2"><a>Statistique</a><a>R</a><a>ACP</a><a>Classification</a></span>
+        </section>
+        <section class="ac-container">
+            <div>
+                <input id="ac-16" name="accordion-1" type="checkbox" />
+                <article class="ac-prj5">
+                    <div class="info">Identification d'un canidé (loup ou chien) par analyse de données, à l'aide de diverses méthodes d'analyse multivariées : ACP, AFC, classification par diverses approches (Ward, k-means). Tests statistiques.</div>
+                </article>
+            </div>
+        </section>
+    </li>
+    <li>
+        <time>
+            Jan. 2013</br>
+            6 mois 
+        </time>
+        <nav>
+            <label for="ac-17">Détails</label>
+        </nav>
+        <section class="item">
+            <h1>Optimisation discrète, Algorithme de Kuhn / Méthode hongroise</h1>
+            <span class="tags2"><a>Optimisation</a><a>Algorithmique</a><a>Affectation</a></span>
+        </section>
+        <section class="ac-container">
+            <div>
+                <input id="ac-17" name="accordion-1" type="checkbox" />
+                <article class="ac-prj5">
+                    <div class="info">Résolution du problème d'affectation optimale par la méthode hongroise. Implémentation en C++11.</div>
+                </article>
+            </div>
+        </section>
+    </li>
+    <li>
+        <time>
+            Jan. 2013</br>
+            6 mois 
+        </time>
+        <nav>
+            <label for="ac-18">Détails</label>
+        </nav>
+        <section class="item">
+            <h1>Culture informatique, Tiling Windows Manager</h1>
+            <span class="tags2"><a>Informatique</a><a>Documentation</a></span>
+        </section>
+        <section class="ac-container">
+            <div>
+                <input id="ac-18" name="accordion-1" type="checkbox" />
+                <article class="ac-prj5">
+                    <div class="info">Documentation sur l'évolution des interfaces graphiques. Comparaison d'une part entre les interfaces fenêtrées et dites en <em>tiling</em> et d'autre part entre diverses solutions en <em>tiling</em></div>
+                </article>
+            </div>
+        </section>
+    </li>
+    <li>
+        <time>
+            Jan. 2013</br>
+            6 mois 
+        </time>
+        <nav>
+            <label for="ac-19">Détails</label>
+        </nav>
+        <section class="item">
+            <h1>Algorithmique, Matrice creuse</h1>
+            <span class="tags2"><a>Algorithmique</a><a>C++</a></span>
+        </section>
+        <section class="ac-container">
+            <div>
+                <input id="ac-19" name="accordion-1" type="checkbox" />
+                <article class="ac-prj5">
+                    <div class="info">Conception et développement d'un bibliothèque de gestion de matrices creuses.</div>
+                </article>
+            </div>
+        </section>
+    </li>
+    <li>
+        <time>
+            Jan. 2013</br>
+            6 mois 
+        </time>
+        <nav>
+            <label for="ac-20">Détails</label>
+        </nav>
+        <section class="item">
+            <h1>Théorie des graphes, Détection de Cocycles élémentaires</h1>
+            <span class="tags2"><a>Algorithmique</a><a>C++</a></span>
+        </section>
+        <section class="ac-container">
+            <div>
+                <input id="ac-20" name="accordion-1" type="checkbox" />
+                <article class="ac-prj5">
+                    <div class="info">Conception et implémentation d'une méthode de calcul du nombre de cocycles élémentaires d'un graphe quelconque donné.</div>
+                </article>
+            </div>
+        </section>
+    </li>
+    <li>
+        <time>
+            Jan. 2013</br>
+            6 mois 
+        </time>
+        <nav>
+            <label for="ac-21">Détails</label>
+        </nav>
+        <section class="item">
+            <h1>Analyse numérique, Méthode de Gauss-Seidel et Jacobi</h1>
+            <span class="tags2"><a>Algorithmique</a><a>C++</a></span>
+        </section>
+        <section class="ac-container">
+            <div>
+                <input id="ac-21" name="accordion-1" type="checkbox" />
+                <article class="ac-prj5">
+                    <div class="info">Étude et implémentation des méthodes de résolution de systèmes linéaires de Gauss-Seidel et Jacobi en Fortran. Apprentissage du LaTeX.</div>
+                </article>
+            </div>
+        </section>
+    </li>
+    </article>
+    </div>
+    
+</ol>
+
+
+
+<h2>Centres d'intérêt</h2>
+<ul class="interests">
+    <li><strong>Voyages</strong> : Nombreux voyages dans toute l'Europe, en particulier en Pologne. USA, Canada,… </li>
+    <li><strong>Musique</strong> : Guitariste de longue date. Concerts réguliers. Compositeur amateur.</li>
+    <li><strong>Lecture</strong> : Philosophie des sciences : Klein, Poincaré, Popper,…</li>
+</ul>
+

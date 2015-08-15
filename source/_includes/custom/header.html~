@@ -1,0 +1,7 @@
+<img src="/images/photo.jpg" alt="{{ site.author}}" title="{{ site.author }}" class="profilepic" />
+<h1><a href="{{ root_url }}/">{{ site.title }}</a></h1>
+  {% if site.subtitle %}
+<h2 class="subtitle">{{ site.subtitle }}</h2>
+  {% endif %}
+{% include custom/asides/about.html %}
+{% include custom/navigation.html %}
