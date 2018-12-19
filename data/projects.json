@@ -1,0 +1,24 @@
+{
+  "projects": {
+    "hcbr": {
+      "name": "Hypergraph Case-Based Reasoning",
+      "short_desc": "Fast and modern C++ implementation of the new classification method developped during my doctoral studies."
+    },
+    "zenosolver": {
+      "name": "ZenoSolver",
+      "short_desc": "High-performance C++14 optimal solver for a multiobjective AI planning problem called MultiZeno."
+    },
+    "paradiseo":{
+      "name": "ParadisEO",
+      "short_desc": "General white-box object-oriented C++ framework dedicated to the flexible design of mono and multiobjective metaheuristics."
+    },
+    "descarwin": {
+      "name": "Descarwin",
+      "short_desc": "Memetic approach to solve planning problems using a combination of a genetic algorithm and a local solver."
+    },
+    "echrod": {
+      "name": "ECHR Open Data",
+      "short_desc": "First dataset and database for ML learning problems based on the European Court of Human Rights documents."
+    }
+  }
+}

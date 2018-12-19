@@ -1,0 +1,30 @@
+name: 'Build and Deploy'
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+
+jobs:
+  build_image:
+    runs-on: ubuntu-latest
+    name: Workflow
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Get branch name
+        id: branch_name
+        run: echo ::set-output name=branch::$(echo ${GITHUB_REF##*/})
+      - name: Build
+        uses: ./.github/actions/container_run
+        with:
+          cont_action: 'build'
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@3.7.1
+        with:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BRANCH: main # The branch the action should deploy to.
+          FOLDER: output # The folder the action should deploy.
+          CLEAN: true # Automatically remove deleted files from the deploy branch
+          REPOSITORY_NAME: aquemy/aquemy.github.io

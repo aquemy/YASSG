@@ -1,0 +1,107 @@
+[
+    {
+        "years": "May. 2015 - Nov. 2020",
+        "employer": "IBM",
+        "location": "Cracow, Poland",
+        "roles": [
+           {
+            "date": "Mar. 2017 - Nov. 2020",
+            "role": "Senior Engineer & Data Scientist",
+            "details": [
+                "Software Architecture and Engineering on IBM Integrated Analytics System and IBM Cloud Pak for Data",
+                "Responsible for the monitoring solutions of GPFS and Red Hat OpenShift in Hybrid Cloud environment",
+                "Architecture and R&D of an AI platform for financial process automation (IBM Cobee)",
+                "Architecture and R&D of an AI platform to analyze code quality and predict regressions (IBM Code Quality Center)",
+                "Machine Learning and Data Science local trainer",
+                "Conception and implementation of a NLP and Topic Modeling service.",
+                "Responsible for the collaboration with universities (conference, lectures, joint research projects)",
+                "Following master students and interns on research oriented subjects"
+                ]
+           },
+           {
+            "date": "May. 2015 - Nov. 2017",
+            "role": "Engineer",
+            "details": [
+                "Scrum master and small-team leader",
+                "Design, implementation and tests of the software stack for IBM Integrated Analytics System (Python)",
+                "Development of a server to transfer and synchronize data between on premise appliances and the Cloud with High Availability and Disaster Recovery constraints (C++)",
+                "Prototype of a semantic search engine for jurisprudence and law related documents"
+                ]
+           }
+        ]
+    },
+    {
+        "years": "Aug. 2017",
+        "employer": "Watussi",
+        "type": "(one freelance mission)",
+        "location": "Paris, France",
+        "roles": [
+               {
+                "role": "Data Scientist",
+                "details": [
+                    "Conception and implementation of a NLP tool dedicated to Search Engine Optimization (SEO)"
+                ]
+            }
+        ]
+    },
+    {
+        "years": "Nov. 2014 - Apr. 2015",
+        "employer": "X-Formation",
+        "location": "Cracow, Poland",
+        "roles": [
+               {
+                "role": "Software Engineer & Product Owner",
+                "details": [
+                    "Conception of a predictive module in Go (based on temporal series)",
+                    "Improvement of the company development workflow",
+                    "Development of the sustainability and valorization strategy",
+                    "Database optimization and normalization",
+                    "Software architecture, including highly distributed architecture"
+                ]
+            }
+        ]
+    },
+    {
+        "years": "Jun. 2012 - Apr. 2015",
+        "employer": "Inria",
+        "roles": [
+            {
+                "date": "May. 2014 - Apr. 2015",
+                "role": "Research Collaborator",
+                "location": "Saclay, France",
+                "type": "project",
+                "title": "Insertion of adaptive modalities in the mono or multi objectives evolutionary planner Divide-and-Evolve",
+                "supervisor": "Marc Schoenauer, TAO team",
+                "details": [
+                    "Solving a temporal planning problem (MultiZenoTravel) from the International Planning Competition",
+                    "Development of the ZenoSolver, a C++14 solver for MultiZenoTravel instances",
+                    "Conception, programmation and experimental validation (using R) of the online adaptation of (hyper)parameters",
+                    "Software engineering on Descarwin (french National Agency for Research: ANR-09-COSI-002)"
+                ]
+            },
+            {
+                "date": "Sep. 2012 - Feb. 2013",
+                "role": "Research Collaborator",
+                "location": "Lille, France",
+                "title": "Parallel Island Model for Metaheuristics.",
+                "type": "project",
+                "supervisor": "Clive Canape, DOLPHIN team",
+                "details": [
+                    "Genetic algorithms, stochastic optimization and statistics (ANOVA model),...",
+                    "Implementation in C++11, JSON parser, UML modelling, parallel computing and HPC..."
+                ]
+            },
+            {
+                "date": "Jun. 2012 - Sep. 2012",
+                "role": "Internship",
+                "location": "Lille, France",
+                "details": [
+                    "Software engineering on ParadisEO, a C++ framework for metaheuristics",
+                    "Development of a module for shared memory parallelism",
+                    "Stabilisation for a new release of ParadisEO",
+                    "Integration of engineering tools : bug tracking, profiling, builds, continuous integration,..."
+                ]
+            }
+        ]
+    }
+]

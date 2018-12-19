@@ -1,0 +1,115 @@
+[ 
+  {
+    "date": "2020",
+    "title": "A Better Approach to Data Science: the example of COVID 19",
+    "event": "HackYeah",
+    "location": "Online Webinar",
+    "links": [
+      ["slides", "./static/slides/COVID19.pptx"],
+      ["article", "https://medium.com/ibm-watson/a-better-approach-to-data-science-the-example-of-covid-19-b87cd1c8f8df"],
+      ["video", "https://www.facebook.com/watch/live/?v=504383473569174&ref=watch_permalink"]
+    ]
+  },
+  {
+    "date": "2020",
+    "title": "PCI Passthrough with Consumer GPU",
+    "event": "IBM Vitality Talks Cracow",
+    "location": "Poland",
+    "links": [
+      ["slides", "./static/slides/pci_passthrough.pptx"]
+    ]
+  },
+  {
+    "date": "2019",
+    "title": "Is practical AutoML more than CASH?",
+    "event": "GHOST Day: a practical machine learning conference Poznan",
+    "location": "Poland",
+    "links": [
+      ["slides", "./static/slides/2019_GHOST.pptx"]
+    ]
+  },
+  {
+    "date": "2019",
+    "title": "Towards Data Pipeline Selection and Optimization",
+    "event": "IBM CEE Regional Technical Exchange Budapest",
+    "location": "Hungary"
+  },
+  {
+    "date": "2018",
+    "title": "Towards Data Pipeline Optimization",
+    "event": "PyData Warsaw Cracow",
+    "location": "Poland",
+    "links": [
+        ["slides", "./static/slides/PyData_Warsaw.pptx"],
+        ["video", "https://www.youtube.com/watch?v=mmoYYACFX0c"]
+    ]
+  },
+  {
+    "date": "2018",
+    "title": "AI for the legal domain: an explainability challenge (extended)",
+    "event": "IBM Vitality Talks Cracow",
+    "location": "Poland",
+    "links": [
+        ["slides", "./static/slides/IFIP_extended.pptx"]
+    ]
+  },
+  {
+    "date": "2018",
+    "title": "Artificial Intelligence Microservices for NLP",
+    "event": "IBM Vitality Talks Cracow",
+    "location": "Poland"
+  },
+  {
+    "date": "2017",
+    "title": "Can we really compare our algorithms? Beyond worst-case time complexity",
+    "event": "IBM Vitality Talks Cracow",
+    "location": "Poland"
+  },
+  {
+    "date": "2017",
+    "title": "IBM Watson Services in Scala",
+    "event": "ScalaSphere Cracow",
+    "location": "Poland",
+    "links": [
+      ["slides", "./static/slides/ScalaSpherePresentation.pptx"],
+      ["video", "https://www.youtube.com/watch?v=80YDuNGhSmk"]
+    ]
+  },
+  {
+    "date": "2017",
+    "title": "Data Science Techniques for Law and Justice: Current State of Research and Open Problems",
+    "event": "IBM Vitality Talks Cracow",
+    "location": "Poland",
+    "links": [
+      ["slides", "./static/slides/SotA.pdf"]
+    ]
+  },
+  {
+    "date": "2016",
+    "title": "Intelligent Home Automation, combining IoT and Machine Learning",
+    "event": "KrakYourNet 7 Cracow",
+    "location": "Poland",
+    "links": [
+      ["slides", "./static/slides/krakyournet.pdf"]
+    ]
+  },
+  {
+    "date": "2016",
+    "title": "CESTAC: Stochastic estimation and control of rounding floatting point errors",
+    "event": "IBM Vitality Talks Cracow",
+    "location": "Poland",
+    "links": [
+      ["slides", "./static/slides/CESTAC.pptx"],
+      ["code", "https://github.com/aquemy/CESTAC"]
+    ]
+  },
+  {
+    "date": "2016",
+    "title": "General Parallel File System (GPFS) presentation and administration",
+    "event": "IBM Vitality Talks Cracow",
+    "location": "Poland",
+    "links": [
+      ["slides", "./static/slides/gpfs.pdf"]
+    ]
+  }
+]

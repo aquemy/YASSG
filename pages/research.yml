@@ -1,0 +1,15 @@
+---
+title: 'Research'
+id: research
+sections:
+  thesis: {}
+  publications: {}
+  awards: {}
+  supervision:
+    title: Teaching & Supervision
+    subsections:
+      supervision:
+        intro: 'Students and interns under my supervision:'
+      teaching:
+        intro: 'I have participated in the following graduate and undergraduate courses:'
+  talks: {}

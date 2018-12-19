@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="wrapper">
+
+
+    {% include 'includes/sidebar.html' %}
+    {% include 'includes/menu.html' %}
+    <div class="main-wrapper">
+
+        <section class="section summary-section">
+        <h2 class="section-title"><i class="fa fa-user"></i>Biography & Aspirations</h2>
+        <div class="summary">
+            <p>I joined IBM in 2015 where I currently hold a senior engineer position at Cracow Software Lab. Beyond engineering, I participate in the University Relations development program and actively follow interns and master students on research-oriented projects.</p>
+            <p>In parallel of my activities at IBM, I am pursuing a Ph.D. at Poznan University of Technology, under the supervision of Pr. Robert Wrembel, in the field of Machine Learning with a focal point on explainability and with applications to the justice domain.</p>
+            <p>I received a master of science degree (diplome d'ingénieur) from the National Institute of Applied Sciences (INSA) in France, where I had the opportunity to work with Inria TAO team (machine learning and optimization), under the supervision of Pr. Marc Schoenauer, on the project DESCARWIN funded by the National Agency for Research.
+        </div><!--//summary-->
+        </section><!--//section-->
+
+        <section class="section summary-section">
+        <h2 class="section-title"><i class="fa fa-project-diagram"></i>Projects</h2>
+        <div class="summary" style="overflow: hidden;">
+
+            {% for k, p in data.projects.projects.items() %}
+            <div class="my-2 mx-auto p-relative bg-white shadow-1 blue-hover" style="float:left; width: 360px; margin-left: 1em; border-radius: 1px;">
+
+              <div class="px-2 py-2">
+
+                <h1 class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
+                 {{ p.name }}
+                </h1>
+
+                <p class="mb-1 truncate">
+                 {{ p.short_desc }}
+                </p>
+
+              </div>
+
+              <a href="#0" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
+                Read More
+              </a>
+
+            </div>
+            {% endfor %}
+        </div>
+        
+    </div><!--//main-body-->
+</div>
+
+{% endblock %}

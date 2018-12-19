@@ -1,0 +1,165 @@
+[   
+    {
+        "title": "True Pareto Fronts for Realistic Multi-Objective AI Planning Instances",
+        "authors": "Alexandre Quemy",
+        "date": 2021,
+        "conference": "To be submitted to International Conference on Automated Planning and Scheduling (ICAPS)",
+        "links": [
+            ["code", "https://github.com/aquemy/ZenoSolver"]
+        ]
+    },
+    {
+        "title": "A Physical Approach to Classification",
+        "authors": "Alexandre Quemy",
+        "date": 2021,
+        "conference": "To be submitted to International Conference on Machine Learning (ICML)"
+    },
+    {
+        "title": "ECHR-DB: On Building an Integrated Open Repository of Legal Documents for Machine Learning Applications",
+        "authors": "Alexandre Quemy and Robert Wrembel",
+        "date": 2020,
+        "journal": "Information Systems (submitted)",
+        "links": [
+            ["code", "https://github.com/echr-od/ECHR-OD_predictions"],
+            ["supplementary material", "https://github.com/echr-od/ECHR-OD_project_supplementary_material"],
+            ["website", "https://echr-opendata.eu"]
+        ]
+    },
+    {
+        "title": "GBEx, towards Graph-Based Explainations",
+        "authors": "Paweł Mróz and Alexandre Quemy and Mateusz Ślażyński and Krzysztof Kluza and Paweł Jemioło",
+        "date": 2020,
+        "journal": "International Conference Tools with Artificial Intelligence (ICTAI)",
+        "links": [
+            ["pdf", "./static/publications/ictai2020xai.pdf"],
+            ["slides", "./static/slides/ictai2020xai_slides.pdf"]
+        ]
+    },
+    {
+        "title": "On Integrating and Classifying Legal Text Documents",
+        "authors": "Alexandre Quemy and Robert Wrembel",
+        "date": 2020,
+        "journal": "International Conference on Database and Expert Systems Applications (DEXA)",
+        "volume": 12391,
+        "serie": "LNCS",
+        "links": [
+            ["bibtex", "https://dblp.org/rec/conf/dexa/QuemyW20.html?view=bibtex"],
+            ["pdf", "./static/publications/quemy2020e.pdf"],
+            ["slides", "./static/slides/DEXA_2020.pptx"],
+            ["website", "https://echr-opendata.eu"]
+        ]
+    },
+    {
+        "authors": "Alexandre Quemy",
+        "title": "Two-stage Optimization for Machine Learning Workflow",
+        "journal": "Information Systems",
+        "date": 2020,
+        "volume": 92,
+        "links": [
+            ["bibtex", "https://dblp.org/rec/journals/is/Quemy20.html?view=bibtex"],
+            ["pdf", "./static/publications/quemy2020.pdf"],
+            ["supplementary material", "https://github.com/aquemy/DOLAP_2019_supplementary_material"]
+        ]
+    },
+    {
+        "authors": "Alexandre Quemy",
+        "title": "Binary Classification In Unstructured Space With Hypergraph Case-Based Reasoning",
+        "journal": "Information Systems",
+        "volume": 85,
+        "pages": "92-113",
+        "date": 2019,
+        "links": [
+            ["bibtex", "https://dblp.org/rec/journals/is/Quemy19.html?view=bibtex"],
+            ["pdf", "./static/publications/quemy2019.pdf"],
+            ["additional material", "http://www.cs.put.poznan.pl/events/AQuemy-additional-material.pdf"],
+            ["code", "https://github.com/aquemy/HCBR"]
+        ]
+    },
+    {
+        "title": "Data Pipeline Selection and Optimization",
+        "authors": "Alexandre Quemy",
+        "date": 2019,
+        "conference": "International Workshop on Design, Optimization, Languages and Analytical Processing of Big Data (DOLAP) @ International Conference on Extending Database Technology/International Conference on Database Theory (EDBT/ICDT) Joint Conference",
+        "links": [
+            ["bibtex", "https://dblp.org/rec/conf/dolap/Quemy19.html?view=bibtex"],
+            ["pdf", "./static/publications/quemy2019b.pdf"],
+            ["slides", "./static/slides/DOLAP_2019.pptx"]
+        ]
+    },
+    {
+        "title": "Binary Classification With Hypergraph Case-Based Reasoning",
+        "authors": "Alexandre Quemy",
+        "date": 2018,
+        "conference": "International Workshop on Design, Optimization, Languages and Analytical Processing of Big Data (DOLAP) @ International Conference on Extending Database Technology/International Conference on Database Theory (EDBT/ICDT) Joint Conference",
+        "links": [
+            ["bibtex", "https://dblp.org/rec/conf/dolap/Quemy19.html?view=bibtex"],
+            ["pdf", "./static/publications/quemy2018.pdf"],
+            ["slides", "./static/slides/DOLAP_extended.pptx"]
+        ]
+    },
+    {
+        "title": "AI for the legal domain: an explainability challenge",
+        "authors": "Alexandre Quemy",
+        "date": 2018,
+        "conference": "PhD Student Research Competition, IFIP World Computer Congress",
+        "links": [
+            ["pdf", "./static/publications/quemy2018c.pdf"],
+            ["slides", "./static/slides/IFIP_extended.pptx"]
+        ]
+    },
+    {
+        "title": "Unsupervised Video Semantic Partitioning Using IBM Watson and Topic Modelling",
+        "authors": "Alexandre Quemy and Krzysztof Jamrog and Marcin Janiszewski",
+        "conference": "International Workshop on Data Analytics solutions for Real-LIfe APplications (DARLI-AP) @ International Conference on Extending Database Technology/International Conference on Database Theory (EDBT/ICDT) Joint Conference",
+        "date": 2018,
+        "pages": "44-49",
+        "links": [
+            ["bibtex", "https://dblp.org/rec/conf/edbt/QuemyJJ18.html?view=bibtex"],
+            ["pdf", "./static/publications/quemy2018b.pdf"],
+            ["slides", "./static/slides/DARLI-AP.pptx"]
+        ]
+
+    },
+    {
+        "title": "Data Science Techniques for Law and Justice: Current State of Research and Open Problems",
+        "authors": "Alexandre Quemy",
+        "date": 2017,
+        "conference": "Advances in Databases and Information Systems (ADBIS) Workshops and Short papers",
+        "publisher": "Springer",
+        "pages": "302--312",
+        "links": [
+            ["bibtex", "https://dblp.org/rec/conf/adbis/Quemy17.html?view=bibtex"],
+            ["pdf", "./static/publications/quemy2017.pdf"],
+            ["slides", "./static/slides/2017_DAS.pdf"]
+        ]
+    },
+    {
+        "title": "Solving Large MultiZenoTravel Benchmarks with Divide-and-Evolve",
+        "authors": "Alexandre Quemy and Marc Schoenauer and Vincent Vidal and Johann Dréo and Pierre Savéant",
+        "conference": "Learning and Intelligent Optimization (LION)",
+        "location": "Lille, France",
+        "pages": "262-267",
+        "date": "2015",
+        "links": [
+            ["bibtex", " https://dblp.org/rec/conf/lion/QuemySVDS15.html?view=bibtex"],
+            ["pdf", "./static/publications/quemy2015b.pdf"],
+            ["slides", "./static/slides/2015_LION.odp"],
+            ["code", "https://github.com/aquemy/ZenoSolver"],
+            ["code", "https://github.com/aquemy/dae"]
+        ]
+    },
+    {
+        "title": "True Pareto Fronts for Multi-objective AI Planning Instances",
+        "authors": "Alexandre Quemy and Marc Schoenauer",
+        "conference": "Evolutionary Computation in Combinatorial Optimization (EvoCOP)",
+        "location": "Copenhagen, Denmark",
+        "date": "2015",
+        "pages": "197-208",
+        "links": [
+            ["bibtex", "https://dblp.org/rec/conf/evoW/QuemyS15.html?view=bibtex"],
+            ["pdf", "./static/publications/quemy2015.pdf"],
+            ["code", "https://github.com/aquemy/ZenoSolver"],
+            ["instances", "https://gforge.inria.fr/frs/?group_id=5907"]
+        ]
+    }
+]

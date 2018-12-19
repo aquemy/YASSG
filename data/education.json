@@ -1,0 +1,37 @@
+[
+    {
+        "graduated": "Jan. 2021 (expected)",
+        "years": "Oct. 2016 - Jan. 2021",
+        "institution": "Poznan University of Technology",
+        "location": "Poznan, Poland",
+        "diploma": "Doctor of Philosophy (Ph.D.)",
+        "field": "Machine Learning",
+        "title": "End-to-end approach to classification in unstructured spaces with application to judicial decisions",
+        "details": [
+            "Elaboration of new AI methods for justice prediction and explanation.",
+            "A new mathematical theory for classification, with ”good” properties (explainability, no metric required, no hyperparameter,...) based on hypergraphs and metric learning",
+            "A generic method to automate most of data preparation using standard hyperparameter tuning techniques",
+            "The largest curated datasets about the European Court of Human Rights, on which I reached over 94% accuracy predicting the outcome of a judgment."
+        ]
+    },
+    {
+        "graduated": "Mar. 2015",
+        "years": "Oct. 2009 - Mar. 2015",
+        "institution": "INSA Rouen (National Institute of Applied Sciences)",
+        "location": "Rouen, France",
+        "diploma": "Master of Science",
+        "field": "Mathematics and Computer Science",
+        "details": [
+            "Mathematics and Software Engineering Department - Top 5 student",
+            "“Musique Étude” - additional cursus for musicians"
+        ]
+    },
+    {
+        "years": "Oct. 2013 - Jun. 2014",
+        "institution": "Cracow University of Technology",
+        "location": "Cracow, Poland",
+        "diploma": "Master of Science",
+        "field": "High Performance Computing and Artificial Intelligence",
+        "details": []
+    }
+]

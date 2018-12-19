@@ -1,0 +1,16 @@
+name: 'Container run'
+description: 'Container action in container'
+inputs:
+  cont_action:
+    description: 'Container action'
+    required: true
+    default: 'help'
+  action_params:
+    description: 'Container action parameters'
+    required: false
+runs:
+  using: 'docker'
+  image: '../../../Dockerfile'
+  args:
+    - ${{ inputs.cont_action }}
+    - ${{ inputs.action_params }}

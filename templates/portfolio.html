@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="wrapper">
+
+
+    {% include 'includes/sidebar.html' %}
+    {% include 'includes/menu.html' %}
+    <div class="main-wrapper">
+
+
+        <section class="section summary-section">
+        <h2 class="section-title"><i class="fa fa-project-diagram"></i>Projects</h2>
+        <div class="summary" style="overflow: hidden;">
+
+            {% for k, p in data.projects.projects.items() %}
+            <div class="my-2 mx-auto p-relative bg-white shadow-1 blue-hover" style="float:left; width: 360px; margin-left: 1em; border-radius: 1px;">
+
+              <div class="px-2 py-2">
+
+                <h1 class="ff-serif font-weight-normal text-black card-heading mt-0 mb-1" style="line-height: 1.25;">
+                 {{ p.name }}
+                </h1>
+
+                <p class="mb-1 truncate">
+                 {{ p.short_desc }}
+                </p>
+
+              </div>
+
+              <a href="#0" class="text-uppercase d-inline-block font-weight-medium lts-2px ml-2 mb-2 text-center styled-link">
+                Read More
+              </a>
+
+            </div>
+            {% endfor %}
+        </div>
+    </div><!--//main-body-->
+</div>
+
+{% endblock %}

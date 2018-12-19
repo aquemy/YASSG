@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="wrapper">
+
+
+    {% include 'includes/sidebar.html' %}
+    {% include 'includes/menu.html' %}
+    <div class="main-wrapper">
+
+        <section class="section summary-section">
+        <h2 class="section-title"><i class="fa fa-university"></i>Research</h2>
+        <div class="summary">
+            <p>My doctoral thesis is entitled "<b>End-to-end approach to classification in unstructured spaces with application to judicial decisions</b>" and focused both on theoretical and practical Machine Learning. I try to reduce the need for expertise required in the usual Machine Learning workflow as it is the first obstacle to the adoption of artificial intelligence solutions.</p>
+            <p>A detailed summary of my doctoral thesis is available <a href="./static/others/phd_summary.pdf">here</a>.
+            <p>
+            My main contributions are:
+            <ul>
+                <li>A new mathematical theory for classification, with "good" properties (explainability, no metric required, no hyperparameter,...) based on hypergraphs and metric learning,</li>
+                <li>A generic method to automate most of data preparation using standard hyperparameter tuning techniques,</li>
+                <li>The largest curated datasets about the legal domain, on which I reached over 94% accuracy predicting the outcome of a judgment.</li>
+            </ul>
+            </p>
+            <p>My current research interests span different areas of Machine Learning and Artificial Intelligence:
+                <ul>
+                    <li>Stochastic Sequence Hypergraphs for classification,</li>
+                    <li>Explainability of Machine Learning models,</li>
+                    <li>AutoML & Automated data preparation,</li>
+                    <li>Application of AI to the justice domain.</li>
+                </ul>
+            </p>
+            <p>Previously I also worked on:
+                <ul>
+                    <li>Online hyperparameter tuning,</li>
+                    <li>Multiobjective discrete optimization.</li>
+                </ul>
+            </p>
+            <p>I serve or served as reviewers for the following journals and conferences:
+                <ul>
+                    {% for e in programme %}
+                    <li>{% if e.website %}
+                        <a href="{{ e.website }}">{{ e.title }}, {{ e.editor }}</a>
+                        {% else %}
+                        {{ e.title }}, {{ e.editor }}
+                        {% endif %}
+                            {% if e.certificate %}[<a href="e.certificate">Certificate</a>]{% endif %}
+                        {% if e.years %}
+                        <nav>
+                            <ul>
+                                {% for l in e.years %}
+                                <li style="display: inline-block;"><a href="{{ l[1] }}">[{{ l[0] }}]</a></li>
+                                {% endfor %}
+                            </ul>
+                        </nav> 
+                        {% endif %}
+                    </li>
+                {% endfor %}
+                </ul>
+            </p>
+        </div><!--//summary-->
+        </section><!--//section-->
+
+
+
+        {{ generate_sections(desc.research.sections, data) }}
+        
+    </div><!--//main-body-->
+</div>
+
+{% endblock %}

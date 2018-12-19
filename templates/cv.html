@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="wrapper">
+
+
+    {% include 'includes/sidebar.html' %}
+    {% include 'includes/menu.html' %}
+    <div class="main-wrapper">
+        <section class="section summary-section">
+        <h2 class="section-title"><i class="fa fa-graduation-cap"></i>Education</h2>
+        <div class="summary">
+            <ol id="bibliography" style="list-style-type: none">
+                {% for e in data.education %}
+                <li>
+                    <div class="item">
+                            <div class="meta">
+                                <div class="upper-row">
+                                    <h3 class="job-title"><cite>{{ e.diploma }}</cite> in {{ e.field }}</h3>
+                                    <div class="time">{{ e.years }}</div>
+                                </div><!--//upper-row-->
+                                <div class="company">{{ e.institution }}, {{ e.location }}</div>
+                            </div><!--//meta-->
+                        <div class="details">
+                            {% if e.title %}
+                            <p><span style="font-weight: bold">Title:</span> <i>{{ e.title }}</i></p>
+                            {% endif %}
+                            {% if e.details %}
+                                <ul>
+                                    {% for l in e.details %}
+                                    <li>{{ l }}</li>
+                                    {% endfor %}
+                                </ul>
+                            {% endif %}
+                        </div>
+                    </div>
+                </li>
+                {% endfor %}
+            </ol>
+        </div><!--//summary-->
+        </section><!--//section-->
+
+        <section class="section experiences-section">
+             <h2 class="section-title"><i class="fa fa-briefcase"></i>Experiences</h2>
+            <ol id="bibliography" style="list-style-type: none">
+                {% for e in data.experience %}
+                <li>
+                    <h4>{{ e.employer }}</h4>
+                    <h5>{{e.years}}</h5>
+                    {% for r in e.roles %}
+                        <div class="item"  style="margin-left: {{ 2 if e.roles|length > 1 else 0 }}em;">
+                            <div class="meta">
+                                <div class="upper-row">
+                                    <h3 class="job-title">{{ r.role }}</h3>
+                                    <div class="time">{{ r.date }}</div>
+                                </div><!--//upper-row-->
+                                <div class="company">{{ r.location if r.location else e.location}}</div>
+                            </div><!--//meta-->
+                            <div class="details">
+                                {% if r.type == "project" %}
+                            <p><span style="font-weight: bold">Title:</span> {{ r.title }}<p>
+                            <span class="in">Supervisor: {{ r.supervisor }}<span>
+                            {% endif %}
+                            <ul>
+                                {% for d in r.details %}
+                                <li>{{ d }}</li>
+                                {% endfor %}
+                            </ul>
+                            </div><!--//details-->
+                        </div><!--//item-->
+                    {% endfor %}
+                </li>
+                {% endfor %}
+                </ol>
+
+    </div><!--//main-body-->
+</div>
+
+{% endblock %}

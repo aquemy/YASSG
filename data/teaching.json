@@ -1,0 +1,22 @@
+[
+	{
+	  "date": "2018 - 2019",
+	  "title": "Theoretical Machine Learning",
+	  "detail": "Lectures at IBM Krakow Software Lab",
+	  "location": "Cracow, Poland",
+	  "links": [
+	      ["slides", "./pdf/Lecture_1_.pptx"]
+	    ]
+	},
+	{
+	  "date": "2016 - 2019",
+	  "title": "IBM Watson Services Overview",
+	  "detail": "Regular presentation at polish universities",
+	  "location": "Poland",
+	  "links": [
+	      ["slides", "./pdf/Watson_Introduction_PW.pptx"],
+	      ["slides", "./pdf/Watson_Introduction_revised.pptx"],
+	      ["slides", "./pdf/Watson_OLD.pdf"]
+	    ]
+	}
+]

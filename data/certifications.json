@@ -1,0 +1,42 @@
+[
+	{
+	  "date": "2019",
+	  "title": "Enterprise Design Thinking - Team Essentials for AI",
+	  "event": "IBM"
+	},
+	{
+	  "date": "2018",
+	  "title": "AI Technical Accelerator",
+	  "event": "IBM AI Academy"
+	},
+	{
+	  "date": "2018",
+	  "title": "Deep Learning",
+	  "event": "IBM"
+	},
+	{
+	  "date": "2018",
+	  "title": "Watson and Cloud Foundations",
+	  "event": "IBM"
+	},
+	{
+	  "date": "2018",
+	  "title": "Cognitive Practitioner",
+	  "event": "IBM"
+	},
+	{
+	  "date": "2018",
+	  "title": "Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization",
+	  "event": "Coursera in the context of IBM ”Machine Learning Everywhere” initiative"
+	},
+	{
+	  "date": "2018",
+	  "title": "Neural Networks and Deep Learning",
+	  "event": "Coursera in the context of IBM ”Machine Learning Everywhere” initiative"
+	},
+	{
+	  "date": "2018",
+	  "title": "Machine Learning",
+	  "event": "Coursera in the context of IBM ”Machine Learning Everywhere” initiative"
+	}
+ ]

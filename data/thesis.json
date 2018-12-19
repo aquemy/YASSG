@@ -1,0 +1,18 @@
+[
+    {
+      "title": "End-to-end approach to classification in unstructured spaces with application to judicial decisions",
+      "supervisor": "Robert Wrembel (Poznan University of Technology)",
+      "type": "Ph.D. thesis",
+      "links": [
+        ["pdf", "./static/thesis/PhD_dissertation.pdf"]
+      ]
+    },
+    {
+      "title": "Insertion of adaptive modalities in the mono or multi objectives evolutionary planner Divide-and-Evolve",
+      "supervisor": "Marc Schoenauer (Inria), Christian Gout (INSA)",
+      "type": "Master thesis",
+      "links": [
+        ["pdf", "./static/thesis/Rapport_Projet_Fin_Etude.pdf"]
+      ]
+    }
+]

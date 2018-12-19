@@ -1,0 +1,32 @@
+[
+	{
+	  "date": "2018 - 2019",
+	  "type": "Master Thesis",
+	  "title": "Graph-based linear explanation for supervised machine learning models",
+	  "student": "Pawel Mroz"
+	},
+	{
+	  "date": "Sum. 2019",
+	  "type": "Internship",
+	  "title": "Design and implementation of a technique to assess regressions associated to GitHub Pull Request",
+	  "student": "Laetitia Beignon"
+	},
+	{
+	  "date": "Spr. 2019",
+	  "type": "Internship",
+	  "title": "Improving predictions of the European Court of Human Rights decisions",
+	  "student": "Amadeusz Masny"
+	},
+	{
+	  "date": "Spr. 2019",
+	  "type": "Internship",
+	  "title": "Hyperparameter Tuning: state-of-the-art and benchmarking",
+	  "student": "Sylwia Wronia"
+	},
+	{
+	  "date": "Sum. 2018",
+	  "type": "Internship",
+	  "title": "Hyperparameter optimization of Split-and-Merge, a semantic partitioning algorithm",
+	  "student": "Pawel Rzonca"
+	}
+]

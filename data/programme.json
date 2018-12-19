@@ -1,0 +1,26 @@
+[
+	{
+		"title": "Fuzzy Information and Engineering",
+		"editor": "Taylor & Francis",
+		"website": "https://www.tandfonline.com/loi/tfie20"
+	},
+	{
+		"title": "Computing",
+		"editor": "Springer",
+		"website": "https://www.springer.com/computer/journal/607"
+	},
+	{
+		"title": "Expert Systems With Applications",
+		"editor": "Elsevier",
+		"website": "https://www.journals.elsevier.com/expert-systems-with-applications",
+		"certificate": "./pdf/certificate_esa.pdf"
+	},
+	{
+		"title": "Data Analytics solutions for Real-Life APlications (DARLI-AP)",
+		"editor": "workshop collocated with EDBT/ICDT Joint Conference",
+		"years": [
+			["2020", "https://dbdmg.polito.it/darli-ap2020/"],
+			["2019", "https://dbdmg.polito.it/darli-ap2019"]
+		]
+	}
+]
