@@ -1,5 +1,13 @@
 livereload
-jinja2
 pyyaml
 requests
 beautifulsoup4
+Markdown
+markdown_math_escape
+python-markdown-math
+pymdown-extensions
+Pygments
+markdown-captions
+markdown-headdown
+markdown-full-yaml-metadata
+jinja2

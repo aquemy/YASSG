@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="wrapper">
+
+    {% include 'includes/sidebar.html' %}
+    {% include 'includes/menu.html' %}
+    <div class="main-wrapper">
+        <div class="recent-post-header" id="top-menu-entry">
+        <p><a href="./blog.html">Back to entries</a></p>
+        </div>
+        <div class="blog_entry">
+        <h1 class="section-title">{{ metadata.Title }}</h1>
+        <div class="item">
+                            <div class="meta">
+                                <div class="upper-row">
+                                    <h3 class="job-title"><cite>{{ metadata.Date }}</cite></h3>
+                                    <div class="time">#{{ metadata.Category }}</div>
+
+                                </div><!--//upper-row-->
+
+                            </div><!--//meta-->
+                        <div class="details">
+
+                        </div>
+                    </div>
+
+        {{ markdown | safe }}
+        </div>
+    </div><!--//main-body-->
+</div>
+
+{% endblock %}

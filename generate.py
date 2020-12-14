@@ -9,9 +9,11 @@ from requests.adapters import BaseAdapter
 import requests
 import os
 from bs4 import BeautifulSoup
-
+import markdown
+import collections
 from builder import generators, utils
 from formatters import items, sections
+
 
 
 
@@ -21,6 +23,7 @@ def create_output_dir(output_dir):
 
 def resolve_url(base_url, output, env):
     return base_url if env == 'prod' else os.path.join(os.path.abspath(__file__), output)
+
 
 root = os.path.dirname(os.path.abspath(__file__))
 templates_dir = os.path.join(root, 'templates')
@@ -45,7 +48,7 @@ CONFIG = {
     'TWITTER': None,
 }
 STATIC = [
-    {'src': 'templates/static'},
+    {'src': 'templates/static', 'dst': ''},
     {'src': 'static', 'mode': 'update' }
 ]
 
@@ -64,7 +67,6 @@ for e in STATIC:
 
     else:
         copy_tree(e.get('src'), output)
-
 
 PAGES_FOLDER = 'pages'
 PAGES_DESC = {}
@@ -93,8 +95,79 @@ for path in data_files:
     with open(join(DATA, path), 'rb') as f:
         data['data'][name] = json.load(f, encoding='utf-8')
 
-with open(os.path.join('pages', 'research.yml'), 'r') as f:
-    page_config = yaml.safe_load(f)
+
+BLOG_FOLDER = 'blog'
+entry_files = [f for f in listdir(BLOG_FOLDER) if '.md' in f]
+data['data']['blog'] = []
+for path in entry_files:
+    print('Load: {}'.format(path))
+    with open(os.path.join(BLOG_FOLDER, path), 'r') as f:
+        slug = path.split('.md')[0]
+        entry_content = f.read()
+        md = markdown.Markdown(
+            extensions=['full_yaml_metadata',
+                        'pymdownx.superfences',
+                        'pymdownx.highlight',
+                        'pymdownx.arithmatex',
+                        'admonition',
+                        'markdown.extensions.toc',
+                        'pymdownx.mark',
+                        'markdown.extensions.attr_list',
+                        'markdown.extensions.def_list',
+                        'markdown.extensions.tables',
+                        'markdown.extensions.abbr',
+                        'markdown_captions',
+                        'markdown.extensions.footnotes',
+                        'pymdownx.caret',
+                        'pymdownx.details',
+                        'pymdownx.keys',
+                        'pymdownx.extra',
+                        'tables',
+                        'pymdownx.magiclink',
+                        'pymdownx.smartsymbols',
+                        'smarty',
+                        'mdx_headdown'],
+            extension_configs={
+                "pymdownx.arithmatex": {'generic': True},
+                "pymdownx.highlight": {'linenums': True},
+                'mdx_headdown': {
+                    'offset': 2,
+                },
+                'markdown.extensions.toc': {
+                    'permalink': True,
+                    'toc_depth': 4
+                }
+            }
+        )
+        entry_to_html = md.convert(entry_content)
+        template = env.get_template('blog_entry.html')
+        folder_path = os.path.join(root, OUTPUT_DIR)
+        filename = os.path.join(folder_path, '{}.html'.format(slug))
+        if md.Meta.get('Status') != 'draft':
+            data['markdown'] = entry_to_html
+            data['metadata'] = md.Meta
+            data['data']['blog'].append(md.Meta)
+            data['data']['blog'][-1]['slug'] = slug
+            data['data']['blog'][-1]['Date'] = data['data']['blog'][-1]['Date'].split()[0]
+            with open(filename, 'w') as fh:
+                fh.write(template.render(
+                    **data
+                ))
+            if os.path.exists(os.path.join('./blog', slug)):
+                create_output_dir(os.path.join(folder_path, 'images', slug))
+                copy_tree(os.path.join('./blog', slug), os.path.join(folder_path, 'images', slug))
+
+
+formatted_blog_entries = {}
+for entry in data['data']['blog']:
+    date = entry['Date'].split()[0]
+    year, monthday = date.split('-', 1)
+    monthday = monthday.replace('-', '.')
+    entry['monthday'] = monthday
+    formatted_blog_entries.setdefault(year, []).append(entry)
+data['data']['blog'] = collections.OrderedDict(sorted(formatted_blog_entries.items(), reverse=True))
+for year in data['data']['blog']:
+    data['data']['blog'][year] = sorted(data['data']['blog'][year], key=lambda x: x['Date'], reverse=True)
 
 LIST_SECTION_FORMATTERS = {}
 data['generate_sections'] = generators.generate_sections
@@ -108,6 +181,9 @@ for page, content in PAGES_DESC.items():
         fh.write(template.render(
             **data
         ))
+
+
+
 
 print('Check for broken links')
 broken_links = utils.find_broken_links(OUTPUT_DIR, 'index.html')

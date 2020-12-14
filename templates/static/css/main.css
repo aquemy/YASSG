@@ -702,3 +702,232 @@ a[target="_blank"]:after {
    -webkit-line-clamp: 3; /* number of lines to show */
    -webkit-box-orient: vertical;
 }
+
+
+table {
+  font-family: "Times New Roman", Times, serif;
+  border: 1px solid #FFFFFF;
+  text-align: center;
+  border-collapse: collapse;
+  min-width: 200px;
+  width: auto;
+}
+
+
+
+table td, table.paleBlueRows th {
+  border: 1px solid #FFFFFF;
+  padding: 3px 2px;
+}
+table tbody td {
+  font-size: 1em;
+}
+table tr:nth-child(even) {
+  background: #D0E4F5;
+}
+table thead {
+  background: #42A8C0;
+  border-bottom: 5px solid #FFFFFF;
+}
+table thead th {
+  font-size: 17px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: center;
+  border-left: 2px solid #FFFFFF;
+}
+table thead th:first-child {
+  border-left: none;
+}
+
+table tfoot {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333333;
+  background: #D0E4F5;
+  border-top: 3px solid #444444;
+}
+table tfoot td {
+  font-size: 14px;
+}
+
+
+
+
+
+.archive-header {
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.recent-post-header {
+    margin: 0px 20px 5px;
+    height: 26px;
+    background: url('../images/dotted-border.png') repeat-x scroll left bottom transparent;
+    clear: both;
+}
+
+.recent-post-header h4 {
+    margin-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    background: none;
+    float: left;
+}
+
+.recent-post-header .date {
+    padding-top: 2px;
+    font-size: 14px;
+    letter-spacing: -0.3px;
+    text-align: right;
+    float: left;
+    text-transform: lowercase;
+}
+
+.recent-post-header .lang {
+    font-size: 14px;
+    text-align: right;
+    text-transform: lowercase;
+}
+
+.recent-post-header .tags {
+    font-size: 14px;
+    text-align: right;
+    text-transform: lowercase;
+}
+
+.archive-wrapper {
+    margin-bottom: 35px;
+}
+
+
+.blog_entry h3 {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+  color: #2d7788;
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 15px;
+}
+
+.blog_entry h4 {
+    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.blog_entry h5 {
+    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.blog_entry figure {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.blog_entry table {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
+
+table.highlighttable {
+  text-align: left;
+  width: 100%;
+}
+
+td.linenos {
+  width: 35px;
+}
+
+.admonition {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    text-align: left;
+}
+
+.toc {
+    padding: 15px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    border: 1px dashed;
+    border-radius: 10px;
+    text-align: left;
+    border-color: #bce8f1;
+    background-color: #d9edf7;
+    width: auto;
+}
+
+.toc ul li {
+    list-style-type: upper-roman;
+}
+
+.toc ul li ul li {
+    list-style-type: decimal;
+}
+
+
+
+.admonition.note { /* csslint allow: adjoining-classes */
+    color: #3a87ad;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+}
+
+.admonition.theorem { /* csslint allow: adjoining-classes */
+
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+}
+
+.admonition.def { /* csslint allow: adjoining-classes */
+
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+}
+
+.admonition.warning { /* csslint allow: adjoining-classes */
+    color: #c09853;
+    background-color: #fcf8e3;
+    border-color: #fbeed5;
+}
+
+.admonition.danger { /* csslint allow: adjoining-classes */
+    color: #b94a48;
+    background-color: #f2dede;
+    border-color: #eed3d7;
+}
+
+.admonition.example{ /* csslint allow: adjoining-classes */
+    font-size: 100%;
+}
+
+.admonition-title {
+    font-weight: bold;
+    text-align: left;
+}
+
+#top-menu-entry {
+    margin-bottom: 30px;
+}
+
+
+.header-link .link {
+    margin-left: 3px;
+}
+
+.recent-post-header h4 {
+    font-weight: 400;
+}
+
+.headerlink {
+    margin-left: 5px;
+}
