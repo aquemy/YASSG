@@ -16,7 +16,6 @@ from formatters import items, sections
 
 
 
-
 def create_output_dir(output_dir):
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
