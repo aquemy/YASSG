@@ -1,5 +1,5 @@
 ---
-Title: Controlling the progapation of numerical errors
+Title: On controlling the progapation of numerical errors
 Date: 2021-01-05 20:40
 Category: Computer Science
 Tags: Computer Science
@@ -316,7 +316,7 @@ As CESTAC purpose is to determine the number of significant digits of a result, 
 
 # Going further: discussions on the validity of CESTAC
 
-**Note:** This section is intended to discuss in a more advanced way the assumptions of validity and can therefore be put aside for a first reading, especially as it can turn out to be a little more technical.
+**Note:** This section is intended to discuss in a more advanced way the validity hypothesis and can therefore be put aside for a first reading, especially as it can turn out to be a little more technical.
 
 There are several hypotheses which have been formulated in order to arrive at the formula for the number of significant digits and which lead to the following question: can we reasonably use a Student's test in order to obtain the confidence interval? This is equivalent to wonder whether the estimator $\bar X$ used is biased or not.
 
