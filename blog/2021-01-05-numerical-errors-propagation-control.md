@@ -303,7 +303,7 @@ A classic stop criterion for iterative algorithms at a given precision is the te
 The worst possible scenario is the following: $\epsilon$ is chosen too small, and the computational errors that have accumulated are too large compared to $\epsilon$, so the algorithm will never converge, its solution will degrade to either converge towards an inconsistent value, or to diverge outright!
 
 !!! def "Definition (machine zero):"
-    A value $X \in \mathcal{F}$, the result of a numerical calculation, with a number $C$ of significant digits, is a **machine zero** if $X = 0$ and $C> 1$ where $X $ is arbitrary but $C = 0$. We denote a machine zero $\bar 0$.
+    A value $X \in \mathcal{F}$, the result of a numerical calculation, with a number $C$ of significant digits, is a **machine zero** if $X = 0$ and $C> 1$ where $X$ is arbitrary but $C = 0$. We denote a machine zero $\bar 0$.
 
 !!! warning "Warning"
     The notion of **machine zero** should not be confused with the notion of [epsilon machine](https://en.wikipedia.org/wiki/Machine_epsilon) nor with [zero](https://en.wikipedia.org/wiki/IEEE_754-1985#Zero) as represented in the IEE754 standard.
