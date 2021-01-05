@@ -228,7 +228,7 @@ This may seem surprising but using a sample of size $N = 3$ results in $K$ being
 
 ## Constructing the sample $R$
 
-Now that we have the theory, we need to know how to construct a sample of results $R $ that is as representative as possible of the multitude of results obtainable from our procedure $F$.
+Now that we have the theory, we need to know how to construct a sample of results $R$ that is as representative as possible of the multitude of results obtainable from our procedure $F$.
 
 For that, we have a **perturbation** function, ```pert```, which for a particular float $X$, returns a disturbed float $X'$ such that $X'$ is $X$ for which we modified the last bit of its significand in a random and uniform way. In other words, we add to the last bit of significand $-1$, $0$ or $1$ with a probability of $\frac 1 3$.
 
@@ -275,7 +275,7 @@ For these two reasons, the asynchronous version is generally inapplicable.
 
 Conversely, the synchronous version consists in modifyng the sample at each assignment operation and using the empirical average as value for the conditional branches[^practice]. It is possible to give an estimate of the number of significant digits at any time because the sample is available at all times during the execution. In fact, this answers the two problems of the asynchronous version:
 
-[^pratice]: In practice, can also systematically use $X_i$ for a given $i $, which avoids having to calculate the average each time.
+[^pratice]: In practice, can also systematically use $X_i$ for a given $i$, which avoids having to calculate the average each time.
 
 - At each step, the result is consistent with itself, it cannot be different solutions since there is never only one value which is used for the conditional structures.
 - The series of branches will necessarily be unique by construction, which makes the final result consistent.
