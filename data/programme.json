@@ -5,6 +5,11 @@
 		"website": "https://www.tandfonline.com/loi/tfie20"
 	},
 	{
+		"title": "Data & Knowledge Engineering",
+		"editor": "Elsevier",
+		"website": "https://www.journals.elsevier.com/data-and-knowledge-engineering"
+	},
+	{
 		"title": "Computing",
 		"editor": "Springer",
 		"website": "https://www.springer.com/computer/journal/607"
@@ -13,7 +18,7 @@
 		"title": "Expert Systems With Applications",
 		"editor": "Elsevier",
 		"website": "https://www.journals.elsevier.com/expert-systems-with-applications",
-		"certificate": "./pdf/certificate_esa.pdf"
+		"certificate": "./static/others/certificate_esa.pdf"
 	},
 	{
 		"title": "Data Analytics solutions for Real-Life APlications (DARLI-AP)",

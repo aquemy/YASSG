@@ -38,13 +38,13 @@
             </p>
             <p>I serve or served as reviewers for the following journals and conferences:
                 <ul>
-                    {% for e in programme %}
+                    {% for e in data.programme %}
                     <li>{% if e.website %}
                         <a href="{{ e.website }}">{{ e.title }}, {{ e.editor }}</a>
                         {% else %}
                         {{ e.title }}, {{ e.editor }}
                         {% endif %}
-                            {% if e.certificate %}[<a href="e.certificate">Certificate</a>]{% endif %}
+                            {% if e.certificate %}[<a href="{{ e.certificate }}">Certificate</a>]{% endif %}
                         {% if e.years %}
                         <nav>
                             <ul>

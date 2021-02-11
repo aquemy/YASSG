@@ -1,7 +1,10 @@
 import formatters.items
+from formatters.sections import section_formatter_supervision
 
 LIST_FORMATTERS = {}
-LIST_SECTION_FORMATTERS = {}
+LIST_SECTION_FORMATTERS = {
+    'supervision': 'section_formatter_supervision'
+}
 SECTION_TO_ICON = {
     'talks': 'fa fa-comments',
     'supervision': 'fa fa-chalkboard-teacher',
@@ -28,7 +31,7 @@ def generate_sections(sections, data):
     for key, section in sections.items():
         formatter = get_formatter(key)
         if formatter is not None:
-            res += formatter(key, section)
+            res += formatter(key, section, data)
         else:
             res += """ 
                 <section class="section summary-section">
@@ -43,12 +46,12 @@ def generate_sections(sections, data):
                 icon=get_section_icon(key, section),
                 title=section.get('title', key.title()),
                 id='talks', #section.get('id', key),
-                items=generate_list_of_items(section.get('items', data.get(key, [])), key)
+                items=generate_list_of_items(section.get('items', data.get(key, [])), key, data)
             )
     return res
 
 
-def generate_list_of_items(items, item_type):
+def generate_list_of_items(items, item_type, data):
     def get_formatter(item_type):
         formatter_name = LIST_FORMATTERS.get(item_type, 'item_formatter_{}'.format(item_type))
         return getattr(formatters.items, formatter_name)

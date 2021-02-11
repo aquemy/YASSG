@@ -1,6 +1,19 @@
 [
     {
-        "years": "May. 2015 - Nov. 2020",
+        "years": "Dec. 2020 - NOW",
+        "employer": "HSBC",
+        "location": "Cracow, Poland",
+        "roles": [
+           {
+            "role": "Lead Manager (AVP) @ Financial Crime Threat Mitigation, Compliance Analytics",
+            "details": [
+                "Innovative solutions to assess and detect financial crimes (Fraud, Money Laundering, Bribery and Corruption, Terrorism Funding)."
+                ]
+           }
+        ]
+    },
+    {
+        "years": "May. 2015 - Dec. 2020",
         "employer": "IBM",
         "location": "Cracow, Poland",
         "roles": [

@@ -38,13 +38,13 @@ CONFIG = {
     'NAME': u'Alexandre Quemy',
     'SITENAME': u'Alexandre Quemy',
     'SITEURL': 'https://aquemy.info',
-    'TAGLINE': 'PhD student in AI & Senior Engineer at IBM',
+    'TAGLINE': 'Lead Manager @ HSBC | Former IBM',
     'PIC': 'profile.jpeg',
     'EMAIL': 'alexandre.quemy@gmail.com',
     'WEBSITE': 'endomorphis.me',
     'LINKEDIN': 'aquemy',
     'GITHUB': 'aquemy',
-    'TWITTER': None,
+    'TWITTER': '@alexandre_quemy',
 }
 STATIC = [
     {'src': 'templates/static', 'dst': ''},
@@ -180,8 +180,6 @@ for page, content in PAGES_DESC.items():
         fh.write(template.render(
             **data
         ))
-
-
 
 
 print('Check for broken links')

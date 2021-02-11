@@ -1,5 +1,6 @@
 
-def section_formatter_supervision(key, section):
+def section_formatter_supervision(key, section, data):
+    from builder.generators import get_section_icon, generate_list_of_items
     res = """ 
         <section class="section summary-section">
             <h2 class="section-title"><i class="{icon}"></i>{title}</h2>
@@ -13,7 +14,7 @@ def section_formatter_supervision(key, section):
         if 'intro' in subsection:
             res += '<p>{intro}</p>'.format(intro=subsection['intro'])
         res += '<ol id="{id}">'.format(id='talks')
-        res += generate_list_of_items(subsection.get('items', data.get(subkey, [])), subkey)
+        res += generate_list_of_items(subsection.get('items', data.get(subkey, [])), subkey, data)
         res += '</ol>'
     res += """       
             </div>

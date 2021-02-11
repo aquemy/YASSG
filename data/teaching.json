@@ -5,7 +5,7 @@
 	  "detail": "Lectures at IBM Krakow Software Lab",
 	  "location": "Cracow, Poland",
 	  "links": [
-	      ["slides", "./pdf/Lecture_1_.pptx"]
+	      ["slides", "./static/slides/Lecture_1_.pptx"]
 	    ]
 	},
 	{
@@ -14,9 +14,9 @@
 	  "detail": "Regular presentation at polish universities",
 	  "location": "Poland",
 	  "links": [
-	      ["slides", "./pdf/Watson_Introduction_PW.pptx"],
-	      ["slides", "./pdf/Watson_Introduction_revised.pptx"],
-	      ["slides", "./pdf/Watson_OLD.pdf"]
+	      ["slides", "./static/slides/Watson_Introduction_PW.pptx"],
+	      ["slides", "./static/slides/Watson_Introduction_revised.pptx"],
+	      ["slides", "./static/slides/Watson_OLD.pdf"]
 	    ]
 	}
 ]
