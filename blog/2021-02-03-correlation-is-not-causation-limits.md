@@ -11,11 +11,13 @@ Lang: en
 
 # Introduction
 
-We went from a world where the slightest correlation was treated as causation to a world where anytime the light is put on any correlation, it attracts a horde wielding "correlation is not causation" as a mantra, preventing any further thinking. The common point between the two aforementioned situations is that people still do not know the definition of correlation, independence and causation. By definition I do not mean only the mathematical definition, but also what these terms implyand their limits in practice.
+We went from a world where the slightest correlation was treated as causation to a world where anytime the light is put on any correlation, it attracts a horde wielding "correlation is not causation" as a mantra, preventing any further thinking. The common point between the two aforementioned situations is that people still do not know the definition of correlation, independence and causation. By definition I do not mean only the mathematical definition, but also what these terms imply and their limits in practice.
 
-In this article I will share some thoughts and examples to go further than the simple "correlation is not causation" slogan. I will also discuss if the concept of correlation is somehow useful, as observing directly a linear relationship is easier than interpreting the indicator itself. To be honest, I decided to write this article just before reading *The Book of Why* by Judea Pearl, as an exercise to compared my understanding before and after.
+In this article I will share some thoughts and examples to go further than the simple "correlation is not causation" slogan. I will also discuss if the concept of correlation is somehow useful, as observing directly a linear relationship is easier than interpreting the indicator itself. We will talk only about the problems related to the correlation coefficient: we will not discuss any model of causation[^1].
 
-Future articles will cover more in depth the notions of independence, correlation, causality and the limits of $p$-value based science. 
+[^1]: To be honest, I decided to write this article just before reading *The Book of Why* by Judea Pearl, as an exercise to compared my understanding of causation before and after.
+
+Future articles will cover more in depth the notions of independence, correlation, causality and the limits of $p$-value based science without proper causation model. 
 
 
 # Linear correlation coefficient
@@ -25,7 +27,7 @@ Let us start with the definition of the correlation coefficient, or Pearson corr
 !!! definition "Pearson correlation coefficient:"
 	Given a pair of random variable $(X, Y)$, the correlation coefficient $r$ is given by
 
-    $r = \text{corr}(X, Y) = \frac{\text{cov}(X, Y)}{\sigma X \sigma Y}$$
+    $$r = \text{corr}(X, Y) = \frac{\text{cov}(X, Y)}{\sigma X \sigma Y}$$
 
 	with $\text{cov}$ the covariance and $\sigma$ the standard deviation.
 
