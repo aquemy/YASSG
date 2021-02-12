@@ -251,8 +251,8 @@ The two relations to keep in mind when talking about independence is:
 
 # Conclusion: should I really stop using the correlation coefficient?
 
-No. For a single and very good reason: it is a measure on the amplitude of an effect. A linear effect precisely.
- It has many drawbacks, most of them being non-obvious. However, one of the main problems with the current standard scientific method is precisely that it is based on $p$-value which is NOT a measure of the amplitude of an effect but a purely binary threshold: either the effect is significant or not, with regards to an arbitrary threshold decided a priori. Contrarily to a common misconception, for a fixed threshold, let's say $0.05$, a $p$-value $p_1 = 10^{-5}$ is not worse than a $p$-value $p_2 = 10^{-10}$. It tells **nothing** about the amplitude of the effect. It only tells that it would be far more surprising if the effect tested by $p_2$ would not exist or be at random, compared to the effect tested by $p_1$. 
+No. For a single and very good reason: it is a measure of the amplitude of an effect. A linear effect precisely.
+ It has many drawbacks, most of them being non-obvious. However, one of the main problems with the current standard scientific method is precisely that it is based on $p$-value which is NOT a measure of the amplitude of an effect but a purely binary threshold: either the effect is significant or not, with regards to an arbitrary threshold decided a priori. Contrarily to a common misconception, for a fixed threshold, let's say $0.05$, a $p$-value $p_1 = 10^{-5}$ is not worse than a $p$-value $p_2 = 10^{-10}$. It tells **nothing** about the amplitude of the effect. All it tells is that it would be far more surprising if the effect tested by $p_2$ would not exist or be at random, compared to the effect tested by $p_1$. 
 
 As a result, any indicator that can help to understand the amplitude of an effect is more than welcomed. The problem being, that in practice, many people are not taking into account the intrinsic limitations of such indicator.
 
