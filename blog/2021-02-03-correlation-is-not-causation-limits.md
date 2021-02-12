@@ -194,7 +194,7 @@ In other words, computing the correlation on subspaces and summing the results w
  1. We might not have enough information in advance to know the whole domain and data points mostly arrive sequentially.
  2. Data points coming sequentially might also not be sampled uniformely on $U$ but on a restriction (independently of $X$ and $Y$).
  3. And even when it is possible to request a sample, it might be very costly to do so in some regions of the domain, therefore introducing de facto a subspace.
- 4. When as a *fact checker* or journalist, I have access to some data, they usually do not have information about whether the data are from a subsample or not.
+ 4. ==When I have access to external data, e.g. as a *fact checker* or journalist, I usually do not have information about whether the data are from a subsample or not.==
 
 
 # Alternative measure for dependencies: Mutual Information
@@ -216,7 +216,7 @@ Computing it is not as easy as for the correlation, especially in practice where
 As illustrated in the following figure, the Mutual Information measures also nonlinear relationships.
  
 
-<center>![Mutual Information and correlation coefficient. [Image source.](https://acp.copernicus.org/articles/18/12699/2018/)](images/2021-02-03-correlation-is-not-causation-limits/MI.png)</center>
+<center>![Mutual Information and correlation coefficient. It also displays the Spearman's rank correlation which is as limited as Pearson's correlation. [Image source.](https://acp.copernicus.org/articles/18/12699/2018/)](images/2021-02-03-correlation-is-not-causation-limits/MI.png)</center>
 
  
 It can actually be shown that the correlation coefficient can be directly connected to the Mutual Information in case $X$ and $Y$ is a bivariate normal distribution by:
