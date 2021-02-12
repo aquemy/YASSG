@@ -239,14 +239,14 @@ We are getting further from the notion of causality, but roughly speaking, two e
 
 Mathematically, given $A$ and $B$ two events, $A$ and $B$ are independent iff $\mathbb{P}(A \cap B) = \mathbb{P}(A) \mathbb{P}(B)$. It is probably more intuitive by considering that $B$ is not null or not equals to one. Then $A$ and $B$ are independent implies that $\mathbb{P}(A | B) = \mathbb{P}(A)$.
 
-The problem is that we defined here, the independence of two events, not two random variables. Unfortunately, the proper definition of the independence of two or more random variables requires precise formalism which I would like to avoid here. Roughly speaking, a family of random variables defined on a probability space are independent if and only if the family of generated $\sigma$-algebra is itself independent.
+The problem is that we defined here, the independence of two events, not two random variables. Unfortunately, the proper definition of the independence of two or more random variables requires precise formalism which I would like to avoid here because it calls for an entire article by itself. Roughly speaking, a family of random variables defined on a probability space are independent if and only if the family of generated $\sigma$-algebra is itself independent.
 
 In general, the independence of $n$ events is difficult to apprehend. For instance, the pairwise independence of variables does not imply the independence of the family.
 
 The two relations to keep in mind when talking about independence is:
 
-1. The absence of independence implies a zero correlation but zero correlation does not imply independence.
-2. Two variables being independent does not imply that there is an absence of causality between these variables. 
+1. ==The absence of independence implies a zero correlation but zero correlation does not imply independence.==
+2. ==Two variables being independent does not imply that there is an absence of causality between these variables.==
 
 
 # Conclusion: should I really stop using the correlation coefficient?
