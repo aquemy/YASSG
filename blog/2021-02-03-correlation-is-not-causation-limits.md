@@ -48,7 +48,7 @@ where $\bar x$ and $\bar y$ are the sample mean for $X$ and $Y$.
     We will not talk about Spearman's rank correlation despite most remarks applies.
 
 
-# Null correlation does not exclude causation
+# Zero correlation does not exclude causation
 
 > Does the absence of correlation exclude causation?
 
@@ -81,7 +81,7 @@ The answer is no and let's give few theoretical and practical counter-examples.
 	\end{pmatrix} x
 	$$
 
-	That is to say, $g$ is a rotation by 90°. Now define $Y = g(X)$. They cross-covariance is null while again, both one sequence fully determines the second one.
+	That is to say, $g$ is a rotation by 90°. Now define $Y = g(X)$. They cross-covariance is zero while again, both one sequence fully determines the second one.
 
 
 
@@ -245,7 +245,7 @@ In general, the independence of $n$ events is difficult to apprehend. For instan
 
 The two relations to keep in mind when talking about independence is:
 
-1. The absence of independence implies a null correlation but null correlation does not imply independence.
+1. The absence of independence implies a zero correlation but zero correlation does not imply independence.
 2. Two variables being independent does not imply that there is an absence of causality between these variables. 
 
 
