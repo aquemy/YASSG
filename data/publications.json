@@ -15,11 +15,35 @@
         "conference": "To be submitted to International Conference on Machine Learning (ICML)"
     },
     {
-        "title": "ECHR-DB: On Building an Integrated Open Repository of Legal Documents for Machine Learning Applications",
-        "authors": "Alexandre Quemy and Robert Wrembel",
-        "date": 2020,
-        "journal": "Information Systems (submitted)",
+        "title": "Cautiously Making Friends with AI: Machine Learning for human rights research and practice",
+        "authors": "Helga Molbæk-Steensig, Alexandre Quemy",
+        "date": 2021,
+        "conference": "AI & Human Rights: Friend or Foe?, The Erasmus School of Law, together with the Jean Monnet Centre of Excellence on Digital Governance",
         "links": [
+            ["pdf", "./static/publications/quemy2021c.pdf"],
+            ["slides", "./static/slides/powerpointSteensigQuemy.pptx"]
+        ]
+    },
+    {
+        "title": "Paradiseo: From a Modular Framework for Evolutionary Computation to the Automated Design of Metaheuristics",
+        "authors": "Johann Dreo, Arnaud Liefooghe, Sébastien Verel, Marc Schoenauer, Juan Merelo, Alexandre Quemy, Benjamin Bouvier, Jan Gmys",
+        "date": 2021,
+        "conference": "Genetic and Evolutionary Computation Conference (GECCO)",
+        "links": [
+            ["pdf", "./static/publications/quemy2021b.pdf"],
+            ["slides", "./static/slides/2021_GECCO_EvoSoft_ParadisEO.pdf"],
+            ["code", "https://github.com/nojhan/paradiseo"],
+            ["website", "https://nojhan.github.io/paradiseo/"],
+            ["video", "http://johann.dreo.fr/doc/2021-06_GECCO-EVOSOFT_Dreo-al__ParadisEO.mp4"]
+        ]
+    },
+    {
+        "title": "ECHR-OD: On Building an Integrated Open Repository of Legal Documents for Machine Learning Applications",
+        "authors": "Alexandre Quemy and Robert Wrembel",
+        "date": 2021,
+        "journal": "Information Systems",
+        "links": [
+            ["pdf", "./static/publications/quemy2021.pdf"],
             ["code", "https://github.com/echr-od/ECHR-OD_predictions"],
             ["supplementary material", "https://github.com/echr-od/ECHR-OD_project_supplementary_material"],
             ["website", "https://echr-opendata.eu"]

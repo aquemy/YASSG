@@ -4,10 +4,23 @@
         "employer": "HSBC",
         "location": "Cracow, Poland",
         "roles": [
+            {
+            "role": "Senior Assistant Vice President @ Financial Crime Threat Mitigation, Research",
+            "details": [
+                "Development of innovative solutions to assess and detect financial crimes (Fraud, Money Laundering, Bribery and Corruption, Terrorism Funding).",
+                "Product owner for internal innovative projects to improve the governance quality and model efficiency.",
+                "Improving internal model governance lifecycle, including scientific culture, code governance, engineering risks and internal controls.",
+                "Scientific advisor acting as scientific peer reviewer prior submission of any important technical and scientific documentation related to models."
+
+                ]
+           },
            {
             "role": "Lead Manager (AVP) @ Financial Crime Threat Mitigation, Compliance Analytics",
             "details": [
-                "Innovative solutions to assess and detect financial crimes (Fraud, Money Laundering, Bribery and Corruption, Terrorism Funding)."
+                "Leading cross-functional teams from PoC to operational deployment and monitoring in the field of financial crimes detection",
+                "Focus on global scale Name Screening systems",
+                "Establishing design standards for machine learning based models",
+                "Identifying and closing technical gaps in team member skills by providing effective training"
                 ]
            }
         ]
