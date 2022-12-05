@@ -12,7 +12,7 @@ jobs:
     name: Workflow
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2.5
+        uses: actions/checkout@v3
       - name: Get branch name
         id: branch_name
         run: echo ::set-output name=branch::$(echo ${GITHUB_REF##*/})
