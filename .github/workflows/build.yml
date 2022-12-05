@@ -20,10 +20,10 @@ jobs:
         uses: ./.github/actions/container_run
         with:
           cont_action: 'build'
-      - name: Publish generated content to GitHub Pages
-        uses: tsunematsu21/actions-publish-gh-pages@v1.0.2
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          dir: output
+          folder: output
           branch: main
-          repo: aquemy/aquemy.github.io
+          repository-name: aquemy/aquemy.github.io
           token: ${{ secrets.ACCESS_TOKEN }}
