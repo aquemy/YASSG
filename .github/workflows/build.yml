@@ -6,6 +6,9 @@ on:
       - main
       - develop
 
+permissions: 
+  contents: write
+
 jobs:
   build_image:
     runs-on: ubuntu-latest
