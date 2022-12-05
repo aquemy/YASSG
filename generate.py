@@ -92,7 +92,7 @@ for path in data_files:
     print('Load: {}'.format(path))
     name = path.split('.')[0]
     with open(join(DATA, path), 'rb') as f:
-        data['data'][name] = json.load(f, encoding='utf-8')
+        data['data'][name] = json.load(f)
 
 
 BLOG_FOLDER = 'blog'
