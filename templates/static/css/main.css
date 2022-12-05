@@ -32,7 +32,7 @@ h6 {
   font-weight: 700;
 }
 a {
-  color: #2d7788;
+  color: ##2e4049;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -ms-transition: all 0.4s ease-in-out;
@@ -40,7 +40,7 @@ a {
 }
 a:hover {
   text-decoration: underline;
-  color: #1a454f;
+  color: #10171a;
 }
 a:focus {
   text-decoration: none;
@@ -49,7 +49,7 @@ p {
   line-height: 1.5;
 }
 .wrapper {
-  background: #42A8C0;
+  background: #4B6A78;
   max-width: 90%;
   min-width: 1020px;
   margin: 0 auto;
@@ -59,7 +59,7 @@ p {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 .sidebar-wrapper {
-  background: #42A8C0;
+  background: #4B6A78;
   position: absolute;
   right: 0;
   min-width: 240px;
@@ -176,7 +176,7 @@ p {
   text-transform: uppercase;
   font-size: 20px;
   font-weight: 500;
-  color: #2d7788;
+  color: #2e4049;
   position: relative;
   margin-top: 0;
   margin-bottom: 20px;
@@ -195,7 +195,7 @@ p {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  background: #2d7788;
+  background: #2e4049;
   text-align: center;
   padding-top: 8px;
   font-size: 16px;
@@ -257,7 +257,7 @@ p {
 }
 .skillset .level-bar-inner {
   height: 12px;
-  background: #7bc2d3;
+  background: #6c92a3;
 }
 .footer {
   padding: 20px;
@@ -325,7 +325,7 @@ used for profile image
   align-items: center;
   width: 100%;
   height: 50px; 
-  background: #42A8C0;
+  background: #4B6A78;
   margin:auto;
 }
 
@@ -518,7 +518,7 @@ a[target="_blank"]:after {
 .blue-hover:hover {
   
   border: none;
-  border-bottom: 5px solid #42A8C0;
+  border-bottom: 5px solid #4B6A78;
 }
 
 
@@ -726,7 +726,7 @@ table tr:nth-child(even) {
   background: #D0E4F5;
 }
 table thead {
-  background: #42A8C0;
+  background: #4B6A78;
   border-bottom: 5px solid #FFFFFF;
 }
 table thead th {
@@ -805,7 +805,7 @@ table tfoot td {
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 600;
-  color: #2d7788;
+  color: #2e4049;
   position: relative;
   margin-top: 30px;
   margin-bottom: 30px;
