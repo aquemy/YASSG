@@ -1,6 +1,23 @@
 [
+    
     {
-        "years": "Dec. 2020 - NOW",
+        "years": "Apr. 2022 - NOW",
+        "employer": "YData",
+        "location": "Cracow, Poland",
+        "roles": [
+            {
+            "role": "Data Science & Research Team Lead",
+            "details": [
+                "Responsible of the Data Science team composed of software engineers, data scientists and researchers.",
+                "Research, design and implementation of data centric oriented approach to data science.",
+                "Scalability and robustness of generative models for synthetic data generation",
+                "Project and team management according to the product roadmap"
+                ]
+           }
+        ]
+    },
+    {
+        "years": "Dec. 2020 - Mar. 2022",
         "employer": "HSBC",
         "location": "Cracow, Poland",
         "roles": [

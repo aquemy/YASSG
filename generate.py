@@ -38,13 +38,13 @@ CONFIG = {
     'NAME': u'Alexandre Quemy',
     'SITENAME': u'Alexandre Quemy',
     'SITEURL': 'https://aquemy.info',
-    'TAGLINE': 'Lead Manager @ HSBC | Former IBM',
+    'TAGLINE': 'Tech Lead @ YData | Former HSBC, IBM',
     'PIC': 'profile.jpeg',
     'EMAIL': 'alexandre.quemy@gmail.com',
     'WEBSITE': 'endomorphis.me',
     'LINKEDIN': 'aquemy',
     'GITHUB': 'aquemy',
-    'TWITTER': '@alexandre_quemy',
+    'TWITTER': '@alexandre_quemy'
 }
 STATIC = [
     {'src': 'templates/static', 'dst': ''},

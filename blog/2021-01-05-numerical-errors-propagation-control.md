@@ -1,5 +1,5 @@
 ---
-Title: On controlling the progapation of numerical errors
+Title: On controlling the propagation of numerical errors
 Date: 2021-01-05 20:40
 Category: Computer Science
 Tags: Computer Science
