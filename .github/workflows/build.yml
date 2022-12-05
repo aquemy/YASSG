@@ -12,7 +12,7 @@ jobs:
     name: Workflow
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2.5
       - name: Get branch name
         id: branch_name
         run: echo ::set-output name=branch::$(echo ${GITHUB_REF##*/})
@@ -21,7 +21,7 @@ jobs:
         with:
           cont_action: 'build'
       - name: Publish generated content to GitHub Pages
-        uses: tsunematsu21/actions-publish-gh-pages@v1.0.1
+        uses: tsunematsu21/actions-publish-gh-pages@v1.0.2
         with:
           dir: output
           branch: main
