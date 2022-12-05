@@ -21,7 +21,7 @@ function display_mounting_error {
 
 function build {
   python3 ./generate.py ${@:2}
-  chmod -R +rw ${@:2}
+  chmod -R +rw output
 }
 
 function deploy {

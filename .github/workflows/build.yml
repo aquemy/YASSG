@@ -23,6 +23,7 @@ jobs:
         uses: ./.github/actions/container_run
         with:
           cont_action: 'build'
+          action_params: 'output'
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
