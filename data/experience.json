@@ -1,19 +1,54 @@
 [
-    
     {
-        "years": "Apr. 2022 - NOW",
+        "years": "Mar. 2024 - PRESENT",
+        "employer": "Proofs.io",
+        "location": "Copenhagen, Denmark",
+        "roles": [
+            {
+            "role": "Technical Staff",
+            "description": "Core member of the R&D/engineer team, focusing on the development of the LLM-based platform for building complex software PoCs in minutes.",
+            "details": [
+                "Research and development of multi-agent systems for autonomous learning for building complex software PoCs in minutes.",
+                "Continuous and auto-learning via RAG agents and complex nested multi-agent systems..",
+                "Improving the robustness, reliability and reproducibility of LLM-based sytems, notably via advanced Prompt Engineering.",
+                "CI/CD and tooling around LLM, multi-agent systems and knowledge management."
+                ]
+            }
+        ]
+    },
+    {
+        "years": "Nov. 2023 - PRESENT",
+        "employer": "Consultant via Hother.io",
+        "location": "Cracow, Poland",
+        "roles": [
+            {
+            "role": "Data and AI Consultant",
+            "description": "I accept specific missions and short-term consulting for specific data and AI related problems. Some examples include:",
+            "details": [
+                "Synthetic data generation and simulation with counter-factual analysis for clinical studies data.",
+                "Semantic search engine and conversational agent over SQL database.",
+                "SaaS architecture and cost estimation based on scope statements.",
+                "Predictive modeling and recommendation for Mergers & Acquisition."
+                ]
+            }
+        ]
+    },
+    {
+        "years": "Apr. 2022 - Mar. 2024",
         "employer": "YData",
         "location": "Cracow, Poland",
         "roles": [
             {
-            "role": "Data Science & Research Team Lead",
+            "role": "Head of Data and AI / Technical Lead",
+            "description": "I joined YData to take over the data science and AI team from the CDO in order to build a SaaS platform for synthetic data generation and automated data quality assessment and remediation. The responsibilities include: building the team, leading the implementation effort, shaping the core of the company’s intellectual property, researching and answering fundamental research questions at a fast pace.",
             "details": [
-                "Responsible of the Data Science team composed of software engineers, data scientists and researchers.",
-                "Research, design and implementation of data centric oriented approach to data science.",
-                "Scalability and robustness of generative models for synthetic data generation",
-                "Project and team management according to the product roadmap"
+                "Co-author and maintainer of ydata-profiling (previously pandas-profiling), a library for Data Profiling (+10k stars on Github).",
+                "Conception and development of methods to automate data quality assessment and issue remediation.",
+                "Research, PoV/PoC and implementation of new generative models for synthetic data for tabular, timeseries and multitable data.",
+                "Distributed systems using Dask to scale our models and data processing to TB of data",
+                "R&D to integrate LLM to our synthesizers flow and data profiler, notably for table-to-text and row-to-text generation."
                 ]
-           }
+            }
         ]
     },
     {
@@ -23,12 +58,13 @@
         "roles": [
             {
             "role": "Senior Assistant Vice President @ Financial Crime Threat Mitigation, Research",
+            "description": "As Assistant Vice President of Data Science, I follow the whole governance lifecycle process of global models (>200M users, millions to billions transactions per month), from data quality to model monitoring.",
             "details": [
-                "Development of innovative solutions to assess and detect financial crimes (Fraud, Money Laundering, Bribery and Corruption, Terrorism Funding).",
-                "Product owner for internal innovative projects to improve the governance quality and model efficiency.",
+                "Leading cross-functional teams from PoC to operational deployment and monitoring in the field of financial crimes detection.",
+                "Design, conception, implementation and validation of one of the main global Name Screening model used accross the group.",
+                "Product owner and main developer of some internal innovative projects to improve the quality of our data and model governance.",
                 "Improving internal model governance lifecycle, including scientific culture, code governance, engineering risks and internal controls.",
-                "Scientific advisor acting as scientific peer reviewer prior submission of any important technical and scientific documentation related to models."
-
+                "As part of the Research team, I propose and lead R&D projects for the Surveillance & Name Screening value stream, including new methodologies and improvement of existing models or processes."
                 ]
            },
            {
@@ -65,7 +101,6 @@
             "date": "May. 2015 - Nov. 2017",
             "role": "Engineer",
             "details": [
-                "Scrum master and small-team leader",
                 "Design, implementation and tests of the software stack for IBM Integrated Analytics System (Python)",
                 "Development of a server to transfer and synchronize data between on premise appliances and the Cloud with High Availability and Disaster Recovery constraints (C++)",
                 "Prototype of a semantic search engine for jurisprudence and law related documents"

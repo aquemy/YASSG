@@ -43,7 +43,7 @@
         </section><!--//section-->
 
         <section class="section experiences-section">
-             <h2 class="section-title"><i class="fa fa-briefcase"></i>Experiences</h2>
+            <h2 class="section-title"><i class="fa fa-briefcase"></i>Experiences</h2>
             <ol id="bibliography" style="list-style-type: none">
                 {% for e in data.experience %}
                 <li>
@@ -63,6 +63,7 @@
                             <p><span style="font-weight: bold">Title:</span> {{ r.title }}<p>
                             <span class="in">Supervisor: {{ r.supervisor }}<span>
                             {% endif %}
+                            <p>{{ r.description }}</p>
                             <ul>
                                 {% for d in r.details %}
                                 <li>{{ d }}</li>
